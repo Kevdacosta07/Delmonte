@@ -1,0 +1,22 @@
+{% extends 'baselogin.html.twig' %}
+
+{% block title %}Modifier un produit | Delmonte{% endblock %}
+
+{% block body %}
+    <div class="admin-users-edit">
+        <h1>Modifier un profile utilisateur</h1>
+        <p>Remplissez le formulaire ci-dessous</p>
+        {{ form_start(form) }}
+            {{ form_widget(form.firstname, {'label': false, "attr": {"placeholder": "Nom du produit"}}) }}
+            {{ form_widget(form.lastname, {'label': false, "attr": {"placeholder": "Mois du produit"}}) }}
+            {{ form_widget(form.email, {'label': false, "attr": {"placeholder": "Notre vision"}}) }}
+            {{ form_widget(form.password, {'label': false, "attr": {"placeholder": "Mot de passe", 'required': false}}) }}
+            {{ form_row(form.admin, {'label': "Administrateur"}) }}
+            {{ form_row(form.member, {'label': "Membre"}) }}
+            <button type="submit">Modifier le profile</button>
+            {% for message in app.flashes('error') %}
+                <div class="error-msg">{{ message }}</div>
+            {% endfor %}
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

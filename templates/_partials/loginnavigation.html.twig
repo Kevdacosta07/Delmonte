@@ -1,0 +1,39 @@
+<nav class="main-navigation">
+    <div class="left">
+        <i class="fa-solid fa-bars" onclick="changeOpenableMenuStatus()"></i>
+        <p onclick="changeOpenableMenuStatus()">Menu</p>
+    </div>
+    <div class="center">
+        <a href="/">Delmonte</a>
+    </div>
+    <div class="right">
+        <a href="/login">
+            <i class="fa-solid fa-user"></i>
+            <p>Espace Client</p>
+        </a>
+    </div>
+</nav>
+
+
+<div class="openable-menu" data-status="close">
+    <div class="container">
+
+        <div class="menu-title">
+            <h2>Delmonte</h2>
+            <p>Le luxe dans toute sa splandeur</p>
+        </div>
+
+        <div class="navig">
+            <ul>
+                <li><a href="/collections">Collections</a></li>
+                <li><a href="/biographie">Biographie</a></li>
+                <li><a href="/membres">Membres</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="close-openablemenu">
+            <p class="close-openablemenu-btn" onclick="changeOpenableMenuStatus()">X</p>
+        </div>
+    </div>
+</div>

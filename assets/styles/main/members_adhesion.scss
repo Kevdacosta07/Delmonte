@@ -1,0 +1,190 @@
+// -- MEMBRES -- //
+
+.membres {
+  background: linear-gradient(-30deg, #111111 0%, #2f2f2f 50%, #111111 100%);
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 50px;
+
+    h2 {
+      color: white;
+      font-size: 6em;
+      font-weight: 100;
+      font-family: "Pinyon Script", cursive;
+    }
+
+    p {
+      color: white;
+      font-size: 1.2em;
+      font-weight: 100;
+      width: 50%;
+      text-align: center;
+    }
+  }
+
+  .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .container {
+      width: 90%;
+
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 4.8em;
+        }
+
+        p {
+          font-size: 1.6em;
+        }
+      }
+
+      .card1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0;
+
+        .left {
+          width: 45%;
+          display: flex;
+          justify-content: flex-start;
+
+          img {
+            border-radius: 10px;
+            width: 85%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+        .right {
+          display: flex;
+          flex-direction: column;
+          color: white;
+          width: 55%;
+
+          h3 {
+            color: -moz-win-communicationstext;
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            .silver {
+              background: linear-gradient(to right, #4A4A4A, #FFFFFF);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
+            .diamond {
+              background: linear-gradient(to right, #084996, #65ABFF);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+
+          p {
+            font-weight: 200;
+            font-size: 1.3em;
+          }
+        }
+      }
+
+      .card2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0;
+
+        .right {
+          width: 45%;
+          display: flex;
+          justify-content: flex-end;
+
+          img {
+            border-radius: 10px;
+            width: 85%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+        .left {
+          display: flex;
+          flex-direction: column;
+          color: white;
+          width: 55%;
+
+          h3 {
+            color: -moz-win-communicationstext;
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            .ruby {
+              background: linear-gradient(to right, #76001F, #DC003A);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
+            .gold {
+              background: linear-gradient(to right, #52462A, #C1A96A);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+
+          p {
+            font-weight: 200;
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+
+  .become-member
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+
+    h2
+    {
+      color: white;
+      font-size: 6em;
+      font-weight: 100;
+      font-family: "Pinyon Script", cursive;
+    }
+
+    p
+    {
+      color: white;
+      font-size: 1.3em;
+      width: 70%;
+    }
+
+    a
+    {
+      padding: 10px 20px;
+      background: white;
+      color: black;
+      margin: 50px 0;
+      font-weight: 600;
+      font-size: 1.5em;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+body:has(.admin-collections)
+{
+  background: black;
+
+  .create-collection
+  {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    font-weight: 700;
+    font-size: 1.3em;
+    border-radius: 5px;
+  }
+
+  .admin-collections
+  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .title
+    {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 30px 0;
+
+      h2
+      {
+        font-size: 4em;
+      }
+
+      p
+      {
+        font-size: 1.3em;
+      }
+    }
+
+    .collections
+    {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      .container
+      {
+        position: relative;
+        display: flex;
+
+        .coll
+        {
+          width: 100%;
+          padding: 30px 0;
+          background: linear-gradient(120deg, #918224, #000000);
+          display: flex;
+          border-radius: 5px;
+          align-items: center;
+
+          a
+          {
+            font-size: 2em;
+            font-weight: 900;
+            color: white;
+            text-transform: uppercase;
+            margin-left: 20px;
+          }
+        }
+
+        .icons-settings
+        {
+          display: flex;
+
+          i, a
+          {
+            color: white;
+          }
+
+          i
+          {
+            margin: 0 5px;
+            font-size: 2em;
+            cursor: pointer;
+          }
+
+          i.trash
+          {
+            margin-top: 3px;
+            color: red;
+          }
+
+          form
+          {
+
+            i
+            {
+              color: white;
+            }
+
+            button
+            {
+              background: transparent;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

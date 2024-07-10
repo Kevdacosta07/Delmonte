@@ -1,0 +1,16 @@
+{% extends 'baselogin.html.twig' %}
+
+{% block title %}Gestion des collections | Delmonte{% endblock %}
+
+{% block body %}
+<div class="admin-collections-show">
+    <div class="title">
+        <h2>Collection {{ collection.year }}</h2>
+        <p>Produits disponible dans la collection {{ collection.year }}</p>
+    </div>
+    <div class="products-container">
+
+    </div>
+    <a class="create-product" href="/admin/products/add/{{ id }}"><i class="fa-solid fa-plus"></i> Ajouter un produit</a>
+</div>
+{% endblock %}

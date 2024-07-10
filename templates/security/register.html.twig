@@ -1,0 +1,38 @@
+{% extends 'baselogin.html.twig' %}
+
+{% block title %}Création de compte | Delmonte{% endblock %}
+
+{% block body %}
+    <div class="register">
+        <div class="left">
+            <div class="title">
+                <h1>Delmonte</h1>
+                <p>Connectez-vous à votre compte client en toute sécurité</p>
+            </div>
+            {{ form_start(registrationForm) }}
+
+            {{ form_row(registrationForm.firstname, {'label': false, "attr": {"placeholder": "Nom"}}) }}
+            {{ form_row(registrationForm.lastname, {'label': false, "attr": {"placeholder": "Prénom"}}) }}
+            {{ form_row(registrationForm.email, {'label': false, "attr": {"placeholder": "Adresse e-mail"}}) }}
+            {{ form_row(registrationForm.plainPassword, {'label': false, "attr": {"placeholder": "Mot de passe"}}) }}
+
+
+            <div class="create-account">
+                <p class="noaccount">Vous possédez un compte ?</p>
+                <a href="{{ path('app_login') }}" class="btn">Connectez-vous</a>
+            </div>
+
+            <button class="btn btn-lg btn-primary" type="submit">Inscrivez-vous</button>
+
+
+            {% include "/_partials/flash.html.twig" %}
+
+            {{ form_end(registrationForm) }}
+        </div>
+
+        <div class="right">
+            <h2>Delmonte</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Tristique porta etiam ipsum augue. Sem gravida morbi nulla fringilla mauris diam nisl egestas dui. Nunc egestas ac dictum sollicitudin elementum aliquam porta. Fermentum in orci vel non leo urna mollis et. Tellus sit porttitor nunc quisque.</p>
+        </div>
+    </div>
+{% endblock %}

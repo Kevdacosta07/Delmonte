@@ -1,0 +1,34 @@
+{% extends 'baselogin.html.twig' %}
+
+{% block title %}Gestion des collections | Delmonte{% endblock %}
+
+{% block body %}
+<div class="admin-members">
+    <div class="title">
+        <h2>Liste des utilisateurs</h2>
+        <p>Choisissez une collection pour y accéder</p>
+    </div>
+
+    <div class="members">
+        {% for user in users %}
+            <div class="card">
+                <div class="user">
+                    <h2>{{ user.firstname }} {{ user.lastname }}</h2>
+                </div>
+                <div class="icons-settings">
+                    <form action="{{ path('app_admin_users_delete', {'id': user.id}) }}" method="post" style="display:inline;">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ user.id) }}">
+                        <button type="submit" class="btn-trash">
+                            <i class="fa-solid fa-trash trash"></i>
+                        </button>
+                    </form>
+                    <a href="{{ path('app_admin_users_edit', {'id': user.id}) }}"><i class="fa-solid fa-edit"></i></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+
+<a class="create-collection" href="/admin/collections/add">Créer une collection</a>
+{% endblock %}

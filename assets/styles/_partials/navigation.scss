@@ -1,0 +1,57 @@
+.main-navigation
+{
+  padding: 20px;
+  display: flex;
+  background: #232323;
+
+  div
+  {
+    width: 33%;
+  }
+
+  .left
+  {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.3em;
+
+    p
+    {
+      margin-left: 5px;
+    }
+  }
+
+  .center
+  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a
+    {
+      text-decoration: none;
+      color: white;
+      font-family: "Pinyon Script", cursive;
+      font-size: 3em;
+      font-weight: 500;
+    }
+  }
+
+  .right
+  {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    a {
+      color: black;
+      text-decoration: none;
+      padding: 10px;
+      background: white;
+      border-radius: 3px;
+      font-weight: 500;
+      font-size: 1.3em;
+    }
+  }
+}

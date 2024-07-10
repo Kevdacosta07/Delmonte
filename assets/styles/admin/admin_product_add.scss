@@ -1,0 +1,13 @@
+body:has(.admin-collections-add)
+{
+  background: #1E1E1E;
+
+  .admin-collections-add
+  {
+    background: linear-gradient(-30deg, #090909 28%, #313131 50%, #090909 70%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
