@@ -1,26 +1,75 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Contact | DelMonte{% endblock %}
+{% block title %}Membres | DelMonte{% endblock %}
 
 {% block body %}
-<div class="contact">
-    <div class="txt">
-        <h2>Nous Contacter</h2>
-        <p>Dans le cas ou vous souhaitez confectionner une pièce entièrement sur-mesure, vous devez nous fournir tous les détails concernant celle-ci (matériaux. dimensions, détails). Nous reviendrons vers vous par la suite, envisagez un possible entretien téléphonique afin de déterminer avec plus de précision vos attentes.</p>
+<div class="membres">
+    <div class="title">
+        <h2>Membres</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Sodales in faucibus diam duis nulla. Urna interdum non laoreet tellus dignissim orci. Odio nec quisque tellus eu mauris aliquam est mauris nulla. Tristique risus aliquam etiam velit morbi. Etiam scelerisque mollis purus pharetra vestibulum.</p>
     </div>
 
-    {{ form_start(contactForm) }}
-        {{ form_row(contactForm.email, {'label': false, "attr": {"placeholder": "Adresse e-mail"}}) }}
-        {{ form_row(contactForm.concerne, {'label': false, "attr": {"placeholder": "Concerne"}}) }}
-        {{ form_row(contactForm.message, {'label': false, "attr": {"placeholder": "Votre message"}}) }}
-        <button type="submit">Envoyer</button>
-    {{ form_end(contactForm) }}
-</div>
+    <section class="member-card">
+        <div class="container">
+            <div class="title">
+                <h2>Nos cartes</h2>
+                <p>Consultez l’ensemble de nos cartes membres</p>
+            </div>
 
-{% for message in app.flashes('success') %}
-    <div class="alert alert-success">{{ message }}</div>
-{% endfor %}
-{% for message in app.flashes('error') %}
-    <div class="alert alert-danger">{{ message }}</div>
-{% endfor %}
+            <div class="card1">
+                <div class="left">
+                    <img src="/img/cards/silver.png" alt="Carte membre argent">
+                </div>
+
+                <div class="right">
+                    <h3>Membre <span class="silver">Silver</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Amet tempor orci malesuada et egestas. Egestas id luctus lorem massa sollicitudin ac convallis congue at. Fermentum gravida scelerisque nibh sed sit sem duis dui luctus. Ut pellentesque imperdiet quam condimentum integer enim augue sagittis. Et porttitor sed magna at netus nibh ultrices dignissim. Diam lacus fermentum ac nibh dignissim viverra posuere ante. Duis sit dolor facilisi.</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="left">
+                    <h3>Membre <span class="gold">Gold</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Amet tempor orci malesuada et egestas. Egestas id luctus lorem massa sollicitudin ac convallis congue at. Fermentum gravida scelerisque nibh sed sit sem duis dui luctus. Ut pellentesque imperdiet quam condimentum integer enim augue sagittis. Et porttitor sed magna at netus nibh ultrices dignissim. Diam lacus fermentum ac nibh dignissim viverra posuere ante. Duis sit dolor facilisi.</p>
+                </div>
+
+                <div class="right">
+                    <img src="/img/cards/gold.png" alt="Carte membre or">
+                </div>
+            </div>
+
+            <div class="card1">
+                <div class="left">
+                    <img src="/img/cards/diamond.png" alt="Carte membre diamant">
+                </div>
+
+                <div class="right">
+                    <h3>Membre <span class="diamond">Diamond</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Amet tempor orci malesuada et egestas. Egestas id luctus lorem massa sollicitudin ac convallis congue at. Fermentum gravida scelerisque nibh sed sit sem duis dui luctus. Ut pellentesque imperdiet quam condimentum integer enim augue sagittis. Et porttitor sed magna at netus nibh ultrices dignissim. Diam lacus fermentum ac nibh dignissim viverra posuere ante. Duis sit dolor facilisi.</p>
+                </div>
+            </div>
+
+            <div class="card2">
+                <div class="left">
+                    <h3>Membre <span class="ruby">Ruby</span></h3>
+                    <p>Lorem ipsum dolor sit amet consectetur. Amet tempor orci malesuada et egestas. Egestas id luctus lorem massa sollicitudin ac convallis congue at. Fermentum gravida scelerisque nibh sed sit sem duis dui luctus. Ut pellentesque imperdiet quam condimentum integer enim augue sagittis. Et porttitor sed magna at netus nibh ultrices dignissim. Diam lacus fermentum ac nibh dignissim viverra posuere ante. Duis sit dolor facilisi.</p>
+                </div>
+
+                <div class="right">
+                    <img src="/img/cards/ruby.png" alt="Carte membre ruby">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="become-member">
+        <h2>Devenir Membre</h2>
+        <p>Lorem ipsum dolor sit amet consectetur. Habitant ultrices viverra porta arcu sagittis. Nullam consectetur nec adipiscing eget malesuada non. Pulvinar aliquet pellentesque porttitor donec vitae in at praesent. Lectus etiam nulla nunc erat platea mi sit. Magna orci vitae interdum porttitor. Mattis odio imperdiet pellentesque dui in fermentum sagittis arcu at. Quis iaculis dui egestas amet congue amet. Tortor id in mattis amet nec. Gravida ac quam.</p>
+        {% if not isUserMember %}
+            <a href="/membres/adhesion">Demande d'adhésion membre</a>
+        {% else %}
+            <p class="currentlyMember">Vous faites déjà parti de nos membres ou bien vous avez une demande en cours.</p>
+        {% endif %}
+    </div>
+</div>
 {% endblock %}

@@ -1,6 +1,6 @@
 {% extends 'baselogin.html.twig' %}
 
-{% block title %}Gestion des collections | Delmonte{% endblock %}
+{% block title %}Gestion des membres | Delmonte{% endblock %}
 
 {% block body %}
 <div class="admin-members">
@@ -10,25 +10,35 @@
     </div>
 
     <div class="members">
-        {% for user in users %}
-            <div class="card">
-                <div class="user">
-                    <h2>{{ user.firstname }} {{ user.lastname }}</h2>
+        <div class="container">
+            {% for user in users %}
+                <div class="card">
+                    <div class="sphere">
+                        {% set nom_de_famille = user.lastname %}
+                        {% set premier_caractere = nom_de_famille|slice(0, 1) %}
+                        {{ premier_caractere }}
+                    </div>
+                    <div class="user">
+                        <h2>{{ user.firstname }} {{ user.lastname }}</h2>
+                        <p>{{ user.email }}</p>
+                    </div>
+                    <div class="icons-settings">
+                        {% if app.user != user %}
+                        <form action="{{ path('app_admin_users_delete', {'id': user.id}) }}" method="post" style="display:inline;">
+                            <input type="hidden" name="_method" value="DELETE">
+                            <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ user.id) }}">
+                            <button type="submit" class="btn-trash">
+                                <i class="fa-solid fa-trash trash"></i>
+                            </button>
+                        </form>
+                        {% endif %}
+                        <a href="{{ path('app_admin_users_edit', {'id': user.id}) }}"><i class="fa-solid fa-edit"></i></a>
+                    </div>
                 </div>
-                <div class="icons-settings">
-                    <form action="{{ path('app_admin_users_delete', {'id': user.id}) }}" method="post" style="display:inline;">
-                        <input type="hidden" name="_method" value="DELETE">
-                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ user.id) }}">
-                        <button type="submit" class="btn-trash">
-                            <i class="fa-solid fa-trash trash"></i>
-                        </button>
-                    </form>
-                    <a href="{{ path('app_admin_users_edit', {'id': user.id}) }}"><i class="fa-solid fa-edit"></i></a>
-                </div>
-            </div>
-        {% endfor %}
+            {% endfor %}
+        </div>
     </div>
 </div>
 
-<a class="create-collection" href="/admin/collections/add">Créer une collection</a>
+<a class="create-user" href="/admin/users/add">Créer un utilisateur</a>
 {% endblock %}

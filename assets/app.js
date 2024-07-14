@@ -1,10 +1,24 @@
 import './bootstrap.js';
-/*
- * Welcome to your app's main JavaScript file!
- *
- * This file will be included onto the page via the importmap() Twig function,
- * which should already be in your base.html.twig.
- */
-import './styles/app.css';
-
-console.log('This log comes from assets/app.js - welcome to AssetMapper! 🎉');
+import './styles/global.css';
+import './styles/_partials/navigation.css';
+import './styles/_partials/footer.css';
+import './styles/_partials/navigation2.css'
+import './styles/main/index.css';
+import './styles/main/contact.css';
+import './styles/main/members.css';
+import './styles/admin/admin_users.css';
+import './styles/main/members_adhesion.css';
+import './styles/login/login.css';
+import './styles/login/register.css';
+import './styles/login/profile.css';
+import './styles/collections/collection_show.css';
+import './styles/main/biographie.css';
+import './styles/main/biographie_details.css';
+import './styles/collections/collection.css';
+import './styles/admin/admin_collection_add.css';
+import './styles/admin/admin_collection_show.css';
+import './styles/admin/admin_collection.css';
+import './styles/admin/admin_product_add.css';
+import './styles/admin/admin_product_edit.css';
+import './styles/admin/admin_users_edit.css';
+import './styles/admin/admin_newsletter_handler.css';

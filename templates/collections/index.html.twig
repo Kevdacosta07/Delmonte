@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Collection | Delmonte{% endblock %}
+
+{% block body %}
+<div class="collections-index">
+
+    {% for collection in collections %}
+        {% if currentYear != collection.year %}
+            <a href="/collections/{{ collection.id }}">
+                <div class="coll">
+                <div class="title">
+                    <h2>Collection <span>{{ collection.year }}</span></h2>
+                </div>
+            </div>
+            </a>
+        {% elseif app.user.isMember == true %}
+            <a href="/collections/{{ collection.id }}">
+                <div class="coll">
+                    <div class="title">
+                        <h2>Collection <span>{{ collection.year }}</span></h2>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    {% endfor %}
+</div>
+{% endblock %}

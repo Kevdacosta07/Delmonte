@@ -1,14 +1,19 @@
 {% extends 'baselogin.html.twig' %}
 
-{% block title %}Gestion des collections | Delmonte{% endblock %}
+{% block title %}Ajouter un produit | Delmonte{% endblock %}
 
 {% block body %}
-    <div class="admin-collections-add">
-        <h1>Créer une collection</h1>
-        <p>Choisissez une année pour votre collection</p>
+    <div class="admin-products-add">
+        <h1>Ajouter un produit</h1>
+        <p>Remplissez le formulaire ci-dessous</p>
         {{ form_start(form) }}
-            {{ form_widget(form.year, {'label': false, "attr": {"placeholder": "Année de la collection"}}) }}
-            <button type="submit">Créer la collection</button>
+            {{ form_widget(form.name, {'label': false, "attr": {"placeholder": "Nom du produit"}}) }}
+            {{ form_widget(form.month, {'label': false, "attr": {"placeholder": "Mois du produit"}}) }}
+            {{ form_widget(form.vision, {'label': false, "attr": {"placeholder": "Notre vision"}}) }}
+            {{ form_widget(form.history, {'label': false, "attr": {"placeholder": "Histoire de la pièce"}}) }}
+            {{ form_widget(form.member_informations, {'label': false, "attr": {"placeholder": "Informations dédiée aux membres"}}) }}
+            {{ form_widget(form.imageFile) }}
+            <button type="submit">Ajouter un produit</button>
             {% for message in app.flashes('error') %}
                 <div class="error-msg">{{ message }}</div>
             {% endfor %}

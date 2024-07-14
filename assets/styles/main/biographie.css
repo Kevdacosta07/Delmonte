@@ -1,0 +1,143 @@
+.biographie {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#090909 28%, #313131 50%, #090909 70%);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+}
+.biographie .artisan-info {
+  position: absolute;
+  left: 40px;
+  bottom: 30px;
+  animation: float 1.5s ease-in-out infinite;
+}
+.biographie .artisan-info .lastname, .biographie .artisan-info .firstname {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-size: 5em;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 0.8em;
+}
+.biographie .artisan-info .bdate {
+  color: #FFE1C5;
+  margin-top: 10px;
+  font-family: "Raleway", sans-serif;
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.biographie .artisan-info .bdate span {
+  font-family: "Manrope", sans-serif;
+}
+.biographie .biographiemore {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 80px;
+  bottom: 30px;
+  color: white;
+  animation: float 1.5s ease-in-out infinite;
+}
+.biographie .biographiemore a {
+  display: flex;
+  color: white;
+}
+.biographie .biographiemore p {
+  font-family: "Raleway", sans-serif;
+  margin-right: 10px;
+}
+.biographie .biographiemore p, .biographie .biographiemore i {
+  font-size: 3em;
+  text-transform: uppercase;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .biographie {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#090909 28%, #313131 50%, #090909 70%);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+  }
+  .biographie .artisan-info {
+    position: absolute;
+    left: 40px;
+    bottom: 30px;
+    animation: float 1.5s ease-in-out infinite;
+  }
+  .biographie .artisan-info .lastname, .biographie .artisan-info .firstname {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    line-height: 0.8em;
+  }
+  .biographie .artisan-info .bdate {
+    color: #FFE1C5;
+    margin-top: 10px;
+    font-family: "Raleway", sans-serif;
+    font-size: 3em;
+    font-weight: 900;
+    text-transform: uppercase;
+  }
+  .biographie .artisan-info .bdate span {
+    font-family: "Manrope", sans-serif;
+  }
+  .biographie .biographiemore {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    color: white;
+    animation: float 1.5s ease-in-out infinite;
+  }
+  .biographie .biographiemore a {
+    display: flex;
+    color: white;
+  }
+  .biographie .biographiemore p {
+    font-family: "Raleway", sans-serif;
+    margin-right: 10px;
+  }
+  .biographie .biographiemore p, .biographie .biographiemore i {
+    font-size: 2.3em;
+    text-transform: uppercase;
+  }
+  @keyframes float {
+    0% {
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+    50% {
+      box-shadow: 0 25px 15px 0 rgba(0, 0, 0, 0.2);
+      transform: translatey(-20px);
+    }
+    100% {
+      box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+      transform: translatey(0px);
+    }
+  }
+}
+
+/*# sourceMappingURL=biographie.css.map */

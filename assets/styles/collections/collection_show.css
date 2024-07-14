@@ -1,0 +1,158 @@
+.collections {
+  background: linear-gradient(95deg, #101010 50%, #424242 100%);
+}
+.collections .product {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.collections .product .container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.collections .product .container .left {
+  display: flex;
+  width: 45%;
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  background-position: top left;
+  height: 100%;
+}
+.collections .product .container .right {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.collections .product .container .right .main-title {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.collections .product .container .right .main-title h2 {
+  font-size: 7em;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-weight: 800;
+  line-height: 1em;
+}
+.collections .product .container .right .main-title p {
+  font-size: 1.8em;
+  font-weight: 200;
+}
+.collections .product .container .right .vision {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.collections .product .container .right .vision .title {
+  display: flex;
+  color: white;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.collections .product .container .right .vision .title h3 {
+  font-size: 2.5em;
+  margin-left: 15px;
+  margin-bottom: 1px;
+}
+.collections .product .container .right .vision .title i {
+  font-size: 2.3em;
+}
+.collections .product .container .right .vision .title .goldstar {
+  color: gold;
+}
+.collections .product .container .right .vision p {
+  color: white;
+  font-weight: 200;
+  font-size: 1.6em;
+  width: 90%;
+}
+
+@media screen and (max-width: 1024px) {
+  .collections {
+    background: linear-gradient(95deg, #101010 50%, #424242 100%);
+  }
+  .collections .product {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  .collections .product .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow: hidden;
+  }
+  .collections .product .container .left {
+    display: flex;
+    width: 55%;
+    background-size: 93% 100%;
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 100%;
+  }
+  .collections .product .container .right {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .collections .product .container .right .main-title {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+  }
+  .collections .product .container .right .main-title h2 {
+    font-size: 4em;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 800;
+    line-height: 1em;
+  }
+  .collections .product .container .right .main-title p {
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+  .collections .product .container .right .vision {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+  }
+  .collections .product .container .right .vision .title {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .collections .product .container .right .vision .title h3 {
+    font-size: 1.6em;
+    margin-left: 10px;
+    margin-bottom: 1px;
+  }
+  .collections .product .container .right .vision .title i {
+    font-size: 1.2em;
+  }
+  .collections .product .container .right .vision .title .goldstar {
+    color: gold;
+  }
+  .collections .product .container .right .vision p {
+    color: white;
+    font-weight: 200;
+    font-size: 1.2em;
+    width: 90%;
+  }
+}
+
+/*# sourceMappingURL=collection_show.css.map */

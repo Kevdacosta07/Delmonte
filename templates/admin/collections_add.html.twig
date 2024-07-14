@@ -1,9 +1,17 @@
-{% extends 'baseadmin.html.twig' %}
+{% extends 'baselogin.html.twig' %}
 
 {% block title %}Gestion des collections | Delmonte{% endblock %}
 
 {% block body %}
-    <div class="admin-collections">
-
+    <div class="admin-collections-add">
+        <h1>Créer une collection</h1>
+        <p>Choisissez une année pour votre collection</p>
+        {{ form_start(form) }}
+            {{ form_widget(form.year, {'label': false, "attr": {"placeholder": "Année de la collection"}}) }}
+            <button type="submit">Créer la collection</button>
+            {% for message in app.flashes('error') %}
+                <div class="error-msg">{{ message }}</div>
+            {% endfor %}
+        {{ form_end(form) }}
     </div>
 {% endblock %}

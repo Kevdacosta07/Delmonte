@@ -1,0 +1,137 @@
+.contact {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(-30deg, #111111 0%, #2f2f2f 50%, #111111 100%);
+}
+.contact .txt {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+.contact .txt h2 {
+  font-family: "Pinyon Script", cursive;
+  font-size: 5em;
+  font-weight: 100;
+  margin-top: 50px;
+}
+.contact .txt p {
+  font-size: 1.5em;
+  width: 60%;
+  font-weight: 100;
+  margin-top: 30px;
+  text-align: center;
+}
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+.contact form div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact form div input, .contact form div textarea {
+  width: 50%;
+  font-family: "Manrope", sans-serif;
+  font-size: 1.1em;
+  padding: 10px 0;
+  font-weight: 500;
+  margin: 20px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+}
+.contact form div input:focus {
+  outline: none;
+}
+.contact form div textarea {
+  height: 150px;
+}
+.contact form div textarea:focus {
+  outline: none;
+}
+.contact form button {
+  background: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.7em;
+  margin-top: 50px;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+  .contact {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(-30deg, #111111 0%, #2f2f2f 50%, #111111 100%);
+  }
+  .contact .txt {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact .txt h2 {
+    font-family: "Pinyon Script", cursive;
+    font-size: 5em;
+    font-weight: 100;
+    margin-top: 50px;
+  }
+  .contact .txt p {
+    font-size: 1.1em;
+    width: 85%;
+    font-weight: 100;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .contact form div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .contact form div input, .contact form div textarea {
+    width: 70%;
+    font-family: "Manrope", sans-serif;
+    font-size: 1.1em;
+    padding: 10px 0;
+    font-weight: 500;
+    margin: 20px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+  }
+  .contact form div input:focus {
+    outline: none;
+  }
+  .contact form div textarea {
+    height: 150px;
+  }
+  .contact form div textarea:focus {
+    outline: none;
+  }
+  .contact form button {
+    background: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    margin-top: 50px;
+    font-weight: 600;
+  }
+}
+
+/*# sourceMappingURL=contact.css.map */

@@ -1,72 +1,314 @@
-.admin-collections-add
+.admin-collections-show
 {
   height: 100vh;
   background: linear-gradient(-30deg, #090909 28%, #313131 50%, #090909 70%);
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 
-  h1
+  .title
   {
-    color: white;
-    font-size: 5em;
-    margin-bottom: 0;
-  }
-
-  p
-  {
-    color: white;
-    font-size: 1.4em;
-  }
-
-  form
-  {
-    margin: 40px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    padding-top: 50px;
     width: 100%;
 
-    input
+    h2
     {
-      width: 40%;
-      background: transparent;
       color: white;
-      font-size: 1.4em;
-      border: none;
-      border-bottom: 2px solid white;
-      margin-bottom: 30px;
-      padding: 5px 0;
+      font-family: "Pinyon Script", cursive;
+      font-weight: 200;
+      font-size: 5em;
     }
 
-    input:focus
+    p
     {
-      outline: none;
-    }
-
-    input::-webkit-outer-spin-button,
-    input::-webkit-inner-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
-
-    .error-msg
-    {
-      color: red;
-      margin-top: 20px;
-      font-size: 1.3em;
-    }
-
-    button
-    {
-      background: white;
-      border: none;
-      font-size: 1.5em;
-      padding: 10px 20px;
-      font-weight: 600;
-      cursor: pointer;
+      color: white;
+      font-size: 1.2em;
     }
   }
+
+  .products-container
+  {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+
+    .card
+    {
+      display: flex;
+      flex-direction: column;
+      width: 500px;
+      height: 300px;
+      background: white;
+      overflow: hidden;
+      margin: 10px;
+      border-radius: 10px;
+      position: relative;
+
+      .title
+      {
+        padding: 0;
+        background: linear-gradient(10deg, #131313, #343434);
+
+        h2
+        {
+          color: white;
+          font-family: "Raleway", sans-serif;
+          text-transform: uppercase;
+          font-size: 3em;
+          padding: 10px 0 5px 0;
+          font-weight: 800;
+        }
+
+        p
+        {
+          color: white;
+          font-size: 1.4em;
+          padding-bottom: 15px;
+        }
+      }
+
+      .text
+      {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .container
+        {
+          display: flex;
+          flex-direction: column;
+          width: 80%;
+
+          p
+          {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+          }
+
+          h2
+          {
+            width: fit-content;
+            margin-bottom: 10px;
+            font-size: 1.7em;
+          }
+        }
+      }
+
+      .icons-settings
+      {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+
+        i
+        {
+          color: white;
+          font-size: 1.2em;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+
+        form
+        {
+          button
+          {
+            padding: 0;
+            margin: 0;
+            background: transparent;
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  .create-product
+  {
+    i
+    {
+      margin-top: 3px;
+      margin-right: 10px;
+      color: black;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: black;
+    background: white;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+
+  .admin-collections-show
+  {
+    height: 100vh;
+    background: linear-gradient(-30deg, #090909 28%, #313131 50%, #090909 70%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 50px;
+      width: 100%;
+
+      h2
+      {
+        color: white;
+        font-family: "Pinyon Script", cursive;
+        font-weight: 200;
+        font-size: 4em;
+      }
+
+      p
+      {
+        color: white;
+        font-size: 1.1em;
+      }
+    }
+
+    .products-container
+    {
+      width: 80%;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+
+      .card
+      {
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        height: 250px;
+        background: white;
+        overflow: hidden;
+        margin: 10px;
+        border-radius: 10px;
+        position: relative;
+
+        .title
+        {
+          padding: 0;
+          background: linear-gradient(10deg, #131313, #343434);
+
+          h2
+          {
+            color: white;
+            font-family: "Raleway", sans-serif;
+            text-transform: uppercase;
+            font-size: 2em;
+            padding: 10px 0 5px 0;
+            font-weight: 800;
+          }
+
+          p
+          {
+            color: white;
+            font-size: 1.2em;
+            padding-bottom: 15px;
+          }
+        }
+
+        .text
+        {
+          width: 100%;
+          margin-top: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+
+          .container
+          {
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+
+            p
+            {
+              display: flex;
+              justify-content: center;
+              width: 100%;
+              font-size: 0.8em;
+            }
+
+            h2
+            {
+              width: fit-content;
+              margin-bottom: 10px;
+              font-size: 1.2em;
+            }
+          }
+        }
+
+        .icons-settings
+        {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+
+          i
+          {
+            color: white;
+            font-size: 1.2em;
+            margin: 0 5px;
+            cursor: pointer;
+          }
+
+          form
+          {
+            button
+            {
+              padding: 0;
+              margin: 0;
+              background: transparent;
+              border: none;
+            }
+          }
+        }
+      }
+    }
+
+    .create-product
+    {
+      i
+      {
+        margin-top: 3px;
+        margin-right: 10px;
+        color: black;
+      }
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      padding: 10px 20px;
+      font-weight: 700;
+      font-size: 1.2em;
+      color: black;
+      background: white;
+      right: 20px;
+      bottom: 20px;
+    }
+  }
+  
 }

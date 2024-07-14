@@ -1,8 +1,8 @@
-body:has(.admin-collections)
+body:has(.admin-members)
 {
   background: black;
 
-  .create-collection
+  .create-user
   {
     position: fixed;
     bottom: 20px;
@@ -15,7 +15,7 @@ body:has(.admin-collections)
     border-radius: 5px;
   }
 
-  .admin-collections
+  .admin-members
   {
     width: 100%;
     display: flex;
@@ -42,71 +42,260 @@ body:has(.admin-collections)
       }
     }
 
-    .collections
+    .members
     {
       width: 100%;
       display: flex;
       flex-direction: column;
+      align-items: center;
       position: relative;
 
       .container
       {
-        position: relative;
+        width: 80%;
         display: flex;
 
-        .coll
+        .card
         {
-          width: 100%;
-          padding: 30px 0;
-          background: linear-gradient(120deg, #918224, #000000);
+          position: relative;
           display: flex;
-          border-radius: 5px;
+          flex-direction: column;
           align-items: center;
+          justify-content: center;
+          margin: 50px;
+          width: 300px;
+          height: 150px;
+          background: white;
+          padding: 10px 20px;
+          border-radius: 5px;
 
-          a
+          .sphere
           {
-            font-size: 2em;
+            width: 55px;
+            height: 55px;
+            background: #3a5c9b;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
             font-weight: 900;
+            font-size: 1.2em;
             color: white;
-            text-transform: uppercase;
-            margin-left: 20px;
-          }
-        }
-
-        .icons-settings
-        {
-          display: flex;
-
-          i, a
-          {
-            color: white;
+            margin-bottom: 20px;
           }
 
-          i
+          .user
           {
-            margin: 0 5px;
-            font-size: 2em;
-            cursor: pointer;
+            width: 100%;
+            background: white;
+            display: flex;
+            flex-direction: column;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+
+            h2
+            {
+              font-size: 1.4em;
+              font-weight: 900;
+              color: black;
+              text-transform: uppercase;
+            }
           }
 
-          i.trash
+          .icons-settings
           {
-            margin-top: 3px;
-            color: red;
-          }
+            display: flex;
+            position: absolute;
+            top: 5px;
+            right: 5px;
 
-          form
-          {
-
-            i
+            i, a
             {
               color: white;
             }
 
-            button
+            i
             {
-              background: transparent;
-              border: none;
+              margin: 0 5px;
+              font-size: 1.4em;
+              cursor: pointer;
+              color: black;
+            }
+
+            i.trash
+            {
+              margin-top: 2px;
+              color: red;
+            }
+
+            form
+            {
+
+              i
+              {
+                color: white;
+              }
+
+              button
+              {
+                background: transparent;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body:has(.admin-members)
+  {
+    background: black;
+
+    .create-user
+    {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background: white;
+      color: black;
+      font-weight: 700;
+      font-size: 1.3em;
+      border-radius: 5px;
+    }
+
+    .admin-members
+    {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .title
+      {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0;
+
+        h2
+        {
+          font-size: 3em;
+        }
+
+        p
+        {
+          font-size: 1.2em;
+        }
+      }
+
+      .members
+      {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        .container
+        {
+          width: 80%;
+          display: flex;
+
+          .card
+          {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 30px;
+            width: 300px;
+            height: 150px;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+
+            .sphere
+            {
+              width: 55px;
+              height: 55px;
+              background: #3a5c9b;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              font-weight: 900;
+              font-size: 1.2em;
+              color: white;
+              margin-bottom: 20px;
+            }
+
+            .user
+            {
+              width: 100%;
+              background: white;
+              display: flex;
+              flex-direction: column;
+              border-radius: 5px;
+              align-items: center;
+              justify-content: center;
+
+              h2
+              {
+                font-size: 1.4em;
+                font-weight: 900;
+                color: black;
+                text-transform: uppercase;
+              }
+            }
+
+            .icons-settings
+            {
+              display: flex;
+              position: absolute;
+              top: 5px;
+              right: 5px;
+
+              i, a
+              {
+                color: white;
+              }
+
+              i
+              {
+                margin: 0 5px;
+                font-size: 1.4em;
+                cursor: pointer;
+                color: black;
+              }
+
+              i.trash
+              {
+                margin-top: 2px;
+                color: red;
+              }
+
+              form
+              {
+
+                i
+                {
+                  color: white;
+                }
+
+                button
+                {
+                  background: transparent;
+                  border: none;
+                }
+              }
             }
           }
         }

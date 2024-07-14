@@ -1,0 +1,206 @@
+.profile {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/img/background_login.png");
+  height: 100vh;
+  background-size: cover;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+.profile .infos-container {
+  height: 75vh;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1E1E1E;
+  position: relative;
+  z-index: 10;
+  border-radius: 10px;
+}
+.profile .infos-container .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.profile .infos-container .text h2 {
+  color: white;
+  font-size: 5em;
+  position: relative;
+  font-weight: 900;
+}
+.profile .infos-container .text .member {
+  display: flex;
+  margin: 20px 0 30px 0;
+  color: white;
+  font-size: 1.4em;
+  align-items: center;
+}
+.profile .infos-container .text .member .mmber, .profile .infos-container .text .member .notMember {
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-weight: 800;
+  margin-left: 10px;
+}
+.profile .infos-container .text .member .mmber {
+  background: #41FF6B;
+  color: black;
+}
+.profile .infos-container .text .member .notMember {
+  background: #ff5151;
+}
+.profile .infos-container .text h3 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+.profile .infos-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+}
+.profile .infos-container form input {
+  border: none;
+  background: transparent;
+  color: white;
+  border-bottom: 2px solid white;
+  padding: 5px 0;
+  margin: 10px 0;
+  width: 50%;
+  font-size: 1.3em;
+}
+.profile .infos-container form input:focus {
+  outline: none;
+}
+.profile .infos-container form button {
+  font-size: 1.4em;
+  background: white;
+  padding: 10px 20px;
+  color: black;
+  border: none;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.profile:before {
+  content: "";
+  position: absolute;
+  background: black;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/img/background_login.png");
+    height: 100vh;
+    background-size: cover;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+  }
+  .profile .infos-container {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1E1E1E;
+    position: relative;
+    z-index: 10;
+    border-radius: 10px;
+    justify-content: center;
+  }
+  .profile .infos-container .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  .profile .infos-container .text h2 {
+    color: white;
+    font-size: 3.5em;
+    position: relative;
+    font-weight: 900;
+  }
+  .profile .infos-container .text .member {
+    display: flex;
+    margin: 20px 0 30px 0;
+    color: white;
+    font-size: 1.2em;
+    align-items: center;
+  }
+  .profile .infos-container .text .member .mmber, .profile .infos-container .text .member .notMember {
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-weight: 800;
+    margin-left: 10px;
+  }
+  .profile .infos-container .text .member .mmber {
+    background: #41FF6B;
+    color: black;
+  }
+  .profile .infos-container .text .member .notMember {
+    background: #ff5151;
+  }
+  .profile .infos-container .text h3 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.3em;
+    margin-bottom: 30px;
+  }
+  .profile .infos-container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .profile .infos-container form input {
+    border: none;
+    background: transparent;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 5px 0;
+    margin: 10px 0;
+    width: 60%;
+    font-size: 1.1em;
+  }
+  .profile .infos-container form input:focus {
+    outline: none;
+  }
+  .profile .infos-container form button {
+    font-size: 1.2em;
+    background: white;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    font-weight: 600;
+    margin-top: 40px;
+  }
+  .profile:before {
+    content: "";
+    position: absolute;
+    background: black;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+
+/*# sourceMappingURL=profile.css.map */

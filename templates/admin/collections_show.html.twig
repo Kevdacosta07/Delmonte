@@ -3,15 +3,38 @@
 {% block title %}Gestion des collections | Delmonte{% endblock %}
 
 {% block body %}
-    <div class="admin-collections-add">
-        <h1>Créer une collection</h1>
-        <p>Choisissez une année pour votre collection</p>
-        {{ form_start(form) }}
-            {{ form_widget(form.year, {'label': false, "attr": {"placeholder": "Année de la collection"}}) }}
-            <button type="submit">Créer la collection</button>
-            {% for message in app.flashes('error') %}
-                <div class="error-msg">{{ message }}</div>
-            {% endfor %}
-        {{ form_end(form) }}
+<div class="admin-collections-show">
+    <div class="title">
+        <h2>Collection {{ collection.year }}</h2>
+        <p>Produits disponible dans la collection {{ collection.year }}</p>
     </div>
+    <div class="products-container">
+        {% for product in products %}
+            <div class="card">
+                <div class="title">
+                    <h2>{{ product.name }}</h2>
+                    <p>{{ product.month }}</p>
+                </div>
+                <div class="text">
+                    <div class="container">
+                        <h2>Histoire</h2>
+                        <p>{{ product.history }}</p>
+                    </div>
+                </div>
+
+                <div class="icons-settings">
+                    <form action="{{ path('app_admin_products_delete', {'id': product.id}) }}" method="post" style="display:inline;">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <input type="hidden" name="_token" value="{{ csrf_token('delete' ~ product.id) }}">
+                        <button type="submit" class="btn-trash">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </form>
+                    <a href="{{ path('app_admin_products_edit', {'id': product.id}) }}"><i class="fa-solid fa-edit"></i></a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <a class="create-product" href="/admin/products/add/{{ id }}"><i class="fa-solid fa-plus"></i> Ajouter un produit</a>
+</div>
 {% endblock %}

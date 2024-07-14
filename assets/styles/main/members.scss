@@ -1,265 +1,602 @@
-// --- ACCUEIL --- //
+// -- MEMBRES -- //
 
-.accueil_main
-{
-  display: flex;
-  align-items: center;
-  height: 100vh;
-  position: relative;
-  background: linear-gradient(-20deg, #000000, #242424, #000000);
+.membres {
+  background: linear-gradient(-30deg, #111111 0%, #2f2f2f 50%, #111111 100%);
 
-  .text
-  {
+  .title {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    color: white;
-    margin-left: 50px;
-
-    .title
-    {
-      h1
-      {
-        font-family: "Pinyon Script", cursive;
-        font-weight: 100;
-        font-size: 12em;
-        line-height: 0.5em;
-      }
-    }
-
-    .subtitle
-    {
-      margin-bottom: 30px;
-      p
-      {
-        font-weight: 100;
-        font-size: 3em;
-      }
-    }
-
-    .txt
-    {
-      margin-bottom: 40px;
-      p
-      {
-        font-weight: 100;
-        font-size: 1.5em;
-        width: 80%;
-      }
-    }
-
-    .btn
-    {
-      a
-      {
-        color: black;
-        background: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 1.5em;
-      }
-    }
-  }
-
-  .blackrose
-  {
-    width: 50%;
-    height: auto;
-  }
-}
-
-
-.accueil_encheres
-{
-  height: 100vh;
-  background: url("/img/background_encheres.jpg") center no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  .text
-  {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    color: white;
-    position: relative;
-    z-index: 1;
+    padding-top: 30px;
+    margin-bottom: 50px;
 
-    .title
-    {
-      h2
-      {
-        font-size: 8em;
-        font-family: "Pinyon Script", cursive;
-        font-weight: 100;
-        line-height: 0.7em;
-      }
+    h2 {
+      color: white;
+      font-size: 6em;
+      font-weight: 100;
+      font-family: "Pinyon Script", cursive;
     }
 
-    .subtitle
-    {
-      p
-      {
-        font-size: 2em;
-        font-weight: 100;
-      }
+    p {
+      color: white;
+      font-size: 1.2em;
+      font-weight: 100;
+      width: 50%;
+      text-align: center;
     }
+  }
 
-    .infos
-    {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      margin: 50px 0 50px 0;
-    }
-      .subinfo
-      {
-        font-size: 2em;
-        font-weight: 500;
-      }
+  .member-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
-      .info
-      {
-        font-size: 2.5em;
-        font-weight: 900;
-        padding: 5px 10px;
-        border: 2px solid white;
-        margin: 10px 0 30px 0;
-      }
+    .container {
+      width: 90%;
 
-      .txt
-      {
+      .title {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+          font-size: 4.8em;
+        }
+
         p {
-          width: 40%;
-          min-width: 500px;
-          font-weight: 100;
-          font-size: 1.5em;
+          font-size: 1.6em;
         }
       }
 
+      .card1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0;
 
+        .left {
+          width: 45%;
+          display: flex;
+          justify-content: flex-start;
+
+          img {
+            border-radius: 10px;
+            width: 85%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+        .right {
+          display: flex;
+          flex-direction: column;
+          color: white;
+          width: 55%;
+
+          h3 {
+            color: -moz-win-communicationstext;
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            .silver {
+              background: linear-gradient(to right, #4A4A4A, #FFFFFF);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
+            .diamond {
+              background: linear-gradient(to right, #084996, #65ABFF);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+
+          p {
+            font-weight: 200;
+            font-size: 1.3em;
+          }
+        }
+      }
+
+      .card2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 70px 0;
+
+        .right {
+          width: 45%;
+          display: flex;
+          justify-content: flex-end;
+
+          img {
+            border-radius: 10px;
+            width: 85%;
+            height: 350px;
+            object-fit: cover;
+            object-position: center;
+          }
+        }
+
+        .left {
+          display: flex;
+          flex-direction: column;
+          color: white;
+          width: 55%;
+
+          h3 {
+            color: -moz-win-communicationstext;
+            font-size: 2.5em;
+            font-weight: 500;
+            margin-bottom: 10px;
+
+            .ruby {
+              background: linear-gradient(to right, #76001F, #DC003A);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+
+            .gold {
+              background: linear-gradient(to right, #52462A, #C1A96A);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+
+          p {
+            font-weight: 200;
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
   }
-}
 
-.accueil_encheres::before, .accueil_artisan::before
-{
-  content: "";
-  background: black;
-  opacity: 0.8;
-  position: absolute;
-  z-index: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.accueil_artisan::before
-{
-  opacity: 0.75;
-}
-
-.accueil_artisan
-{
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  align-items: center;
-  position: relative;
-  background: url("/img/background_jewelry.jpg");
-
-  .section-title
+  .become-member
   {
-    margin: 100px 0 50px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
-    position: relative;
+    padding: 5rem 0;
 
     h2
     {
-      font-family: "Pinyon Script", cursive;
+      color: white;
+      font-size: 6em;
       font-weight: 100;
-      font-size: 7em;
-      line-height: 0.7em;
+      font-family: "Pinyon Script", cursive;
     }
 
     p
     {
-      font-size: 1.8em;
-      font-weight: 200;
+      color: white;
+      font-size: 1.3em;
+      width: 70%;
     }
-  }
 
-  .artisan_info
-  {
-    display: flex;
-    align-items: center;
-    position: relative;
-    color: white;
-    height: 60vh;
-
-    .left
+    a
     {
-      margin-left: 50px;
-
-      .title
-      {
-        p
-        {
-          font-family: "Pinyon Script", cursive;
-          font-size: 5em;
-          font-weight: 100;
-        }
-      }
-
-      .txt
-      {
-        p
-        {
-          width: 50%;
-          font-weight: 100;
-          font-size: 1.5em;
-        }
-      }
-
-      .btn
-      {
-        margin-top: 40px;
-
-        a
-        {
-          padding: 10px 20px;
-          background: white;
-          color: black;
-          width: fit-content;
-          font-size: 1.3em;
-          font-weight: 600;
-        }
-      }
+      padding: 10px 20px;
+      background: white;
+      color: black;
+      margin: 50px 0;
+      font-weight: 600;
+      font-size: 1.5em;
     }
-  }
 
-  .artisan
-  {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 40%;
-    height: auto;
+    .currentlyMember
+    {
+      width: fit-content;
+      margin-top: 40px;
+      color: orange;
+    }
   }
 }
 
+/* Tablet */
 
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .membres {
+    background: linear-gradient(-30deg, #111111 0%, #2f2f2f 50%, #111111 100%);
 
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      margin-bottom: 50px;
 
+      h2 {
+        color: white;
+        font-size: 5em;
+        font-weight: 100;
+        font-family: "Pinyon Script", cursive;
+      }
 
+      p {
+        color: white;
+        font-size: 1em;
+        font-weight: 100;
+        width: 85%;
+        text-align: left;
+      }
+    }
+
+    .member-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .container {
+        width: 90%;
+
+        .title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h2 {
+            font-size: 4em;
+          }
+
+          p {
+            font-size: 1.3em;
+            text-align: center;
+          }
+        }
+
+        .card1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column-reverse;
+          margin: 70px 0;
+
+          .left {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+            img {
+              border-radius: 10px;
+              width: 380px;
+              height: 210px;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .right {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 90%;
+            align-items: center;
+
+            h3 {
+              color: -moz-win-communicationstext;
+              font-size: 2em;
+              font-weight: 500;
+              margin-bottom: 10px;
+
+              .silver {
+                background: linear-gradient(to right, #4A4A4A, #FFFFFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+
+              .diamond {
+                background: linear-gradient(to right, #084996, #65ABFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+
+            p {
+              font-weight: 200;
+              font-size: 1.1em;
+            }
+          }
+        }
+
+        .card2 {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin: 70px 0;
+
+          .right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            img {
+              border-radius: 10px;
+              width: 380px;
+              height: 210px;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 90%;
+            align-items: center;
+
+            h3 {
+              color: -moz-win-communicationstext;
+              font-size: 2em;
+              font-weight: 500;
+              margin-bottom: 10px;
+
+              .ruby {
+                background: linear-gradient(to right, #76001F, #DC003A);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+
+              .gold {
+                background: linear-gradient(to right, #52462A, #C1A96A);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+
+            p {
+              font-weight: 200;
+              font-size: 1.1em;
+            }
+          }
+        }
+      }
+    }
+
+    .become-member
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem 0;
+
+      h2
+      {
+        color: white;
+        font-size: 5em;
+        font-weight: 100;
+        font-family: "Pinyon Script", cursive;
+      }
+
+      p
+      {
+        color: white;
+        font-size: 1em;
+        width: 70%;
+      }
+
+      a
+      {
+        padding: 10px 20px;
+        background: white;
+        color: black;
+        margin: 40px 0;
+        font-weight: 600;
+        font-size: 1.2em;
+      }
+
+      .currentlyMember
+      {
+        width: fit-content;
+        margin-top: 40px;
+        color: orange;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .membres {
+    background: linear-gradient(-30deg, #111111 0%, #2f2f2f 50%, #111111 100%);
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      margin-bottom: 50px;
+
+      h2 {
+        color: white;
+        font-size: 5em;
+        font-weight: 100;
+        font-family: "Pinyon Script", cursive;
+      }
+
+      p {
+        color: white;
+        font-size: 1em;
+        font-weight: 100;
+        width: 70%;
+        text-align: center;
+      }
+    }
+
+    .member-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .container {
+        width: 90%;
+
+        .title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h2 {
+            font-size: 4em;
+          }
+
+          p {
+            font-size: 1.3em;
+          }
+        }
+
+        .card1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 70px 0;
+
+          .left {
+            width: 45%;
+            display: flex;
+            justify-content: flex-start;
+
+            img {
+              border-radius: 10px;
+              width: 85%;
+              height: 210px;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .right {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 55%;
+
+            h3 {
+              color: -moz-win-communicationstext;
+              font-size: 2em;
+              font-weight: 500;
+              margin-bottom: 10px;
+
+              .silver {
+                background: linear-gradient(to right, #4A4A4A, #FFFFFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+
+              .diamond {
+                background: linear-gradient(to right, #084996, #65ABFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+
+            p {
+              font-weight: 200;
+              font-size: 1em;
+            }
+          }
+        }
+
+        .card2 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 70px 0;
+
+          .right {
+            width: 45%;
+            display: flex;
+            justify-content: flex-end;
+
+            img {
+              border-radius: 10px;
+              width: 85%;
+              height: 210px;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 55%;
+
+            h3 {
+              color: -moz-win-communicationstext;
+              font-size: 2em;
+              font-weight: 500;
+              margin-bottom: 10px;
+
+              .ruby {
+                background: linear-gradient(to right, #76001F, #DC003A);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+
+              .gold {
+                background: linear-gradient(to right, #52462A, #C1A96A);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+
+            p {
+              font-weight: 200;
+              font-size: 1em;
+            }
+          }
+        }
+      }
+    }
+
+    .become-member
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem 0;
+
+      h2
+      {
+        color: white;
+        font-size: 5em;
+        font-weight: 100;
+        font-family: "Pinyon Script", cursive;
+      }
+
+      p
+      {
+        color: white;
+        font-size: 1em;
+        width: 70%;
+      }
+
+      a
+      {
+        padding: 10px 20px;
+        background: white;
+        color: black;
+        margin: 40px 0;
+        font-weight: 600;
+        font-size: 1.2em;
+      }
+
+      .currentlyMember
+      {
+        width: fit-content;
+        margin-top: 40px;
+        color: orange;
+      }
+    }
+  }
+}

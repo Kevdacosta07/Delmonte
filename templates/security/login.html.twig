@@ -1,0 +1,50 @@
+{% extends 'baselogin.html.twig' %}
+
+{% block title %}Connexion à l'espace client | Delmonte{% endblock %}
+
+{% block body %}
+    <div class="login">
+        <div class="left">
+            <div class="title">
+                <h1>Delmonte</h1>
+                <p>Connectez-vous à votre compte client en toute sécurité</p>
+            </div>
+            <form method="post">
+
+                <input type="email" placeholder="Adresse e-mail" value="{{ last_username }}" name="_username" id="username" class="form-control" autocomplete="email" required autofocus>
+                <input type="password" placeholder="Mot de passe" name="_password" id="password" class="form-control" autocomplete="current-password" required>
+
+                <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+
+
+                <div class="create-account">
+                    <p class="noaccount">Vous ne possédez pas de compte ?</p>
+                    <a href="/register" class="btn">Créer un compte</a>
+                </div>
+
+                {#
+                Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                See https://symfony.com/doc/current/security/remember_me.html
+
+                <div class="checkbox mb-3">
+                    <input type="checkbox" name="_remember_me" id="_remember_me">
+                    <label for="_remember_me">Remember me</label>
+                </div>
+                #}
+
+                <button class="btn btn-lg btn-primary" type="submit">Connectez-vous</button>
+
+                {% if error %}
+                    <div class="error-msg">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                {% endif %}
+
+            </form>
+        </div>
+
+        <div class="right">
+            <h2>Delmonte</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Tristique porta etiam ipsum augue. Sem gravida morbi nulla fringilla mauris diam nisl egestas dui. Nunc egestas ac dictum sollicitudin elementum aliquam porta. Fermentum in orci vel non leo urna mollis et. Tellus sit porttitor nunc quisque.</p>
+        </div>
+    </div>
+{% endblock %}

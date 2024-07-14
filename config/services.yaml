@@ -20,5 +20,9 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
+    login.route_loader.logout:
+        class: App\Service\LogoutService
+        arguments: [] # Adjust according to your service needs
+        public: true # Make sure it's public if you need to reference it directly
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

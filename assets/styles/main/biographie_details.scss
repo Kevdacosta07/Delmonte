@@ -1,0 +1,140 @@
+.briographie_info
+{
+  width: 100%;
+  height: 100vh;
+  //background: linear-gradient(30deg, #090909 30%, #313131 50%, #090909 70%);
+  background: #090909;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+
+  .container
+  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3em;
+    align-items: center;
+
+    .title
+    {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 7em;
+      width: 70%;
+
+      h2
+      {
+        font-family: "Raleway", sans-serif;
+        color: white;
+        white-space: nowrap;
+        font-weight: 900;
+        text-transform: uppercase;
+        font-size: 6em;
+        line-height: 0.8em;
+      }
+
+      .color
+      {
+        color: #c7c7c7;
+      }
+    }
+
+    .text
+    {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      width: 70%;
+
+      h3
+      {
+        margin-bottom: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-family: "Raleway", sans-serif;
+        letter-spacing: 5px;
+        font-size: 2em;
+      }
+
+      p
+      {
+        font-family: "Manrope", sans-serif;
+        font-size: 1.3em;
+        font-weight: 200;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px)
+{
+  .briographie_info
+  {
+    width: 100%;
+    height: 100vh;
+    //background: linear-gradient(30deg, #090909 30%, #313131 50%, #090909 70%);
+    background: #090909;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+
+    .container
+    {
+      display: flex;
+      flex-direction: column;
+      margin-left: 3em;
+      align-items: center;
+
+      .title
+      {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5em;
+        width: 70%;
+
+        h2
+        {
+          font-family: "Raleway", sans-serif;
+          color: white;
+          white-space: nowrap;
+          font-weight: 900;
+          text-transform: uppercase;
+          font-size: 4em;
+          line-height: 0.8em;
+        }
+
+        .color
+        {
+          color: #c7c7c7;
+        }
+      }
+
+      .text
+      {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 70%;
+
+        h3
+        {
+          margin-bottom: 10px;
+          font-weight: 700;
+          text-transform: uppercase;
+          font-family: "Raleway", sans-serif;
+          letter-spacing: 5px;
+          font-size: 2em;
+        }
+
+        p
+        {
+          font-family: "Manrope", sans-serif;
+          font-size: 1.1em;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}

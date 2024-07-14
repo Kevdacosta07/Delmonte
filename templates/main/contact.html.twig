@@ -1,58 +1,26 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Accueil | DelMonte {% endblock %}
+{% block title %}Contact | DelMonte{% endblock %}
 
 {% block body %}
-<section class="accueil_main">
-    <div class="text">
-        <div class="title"><h1>Delmonte</h1></div>
-        <div class="subtitle"><p>Le luxe dans toute sa splandeur</p></div>
-        <div class="txt">
-            <p>Lorem ipsum dolor sit amet consectetur. Risus faucibus donec risus in ac risus facilisis. Interdum lorem maecenas viverra mattis egestas. Pellentesque interdum enim venenatis commodo praesent. A aliquam egestas sagittis pellentesque ullamcorper dictumst sit nunc. Magnis sed etiam commodo est nulla cursus fringilla. Mauris eu quis etiam consequat. Duis velit proin aliquet.</p>
-        </div>
-        <div class="btn">
-            <a href="/biographie">Découvrez notre artisan</a>
-        </div>
+<div class="contact">
+    <div class="txt">
+        <h2>Nous Contacter</h2>
+        <p>Dans le cas ou vous souhaitez confectionner une pièce entièrement sur-mesure, vous devez nous fournir tous les détails concernant celle-ci (matériaux. dimensions, détails). Nous reviendrons vers vous par la suite, envisagez un possible entretien téléphonique afin de déterminer avec plus de précision vos attentes.</p>
     </div>
 
-    <img class="blackrose" src="/img/blackrose.png" alt="bague avec un rose noire">
-</section>
+    {{ form_start(contactForm) }}
+        {{ form_row(contactForm.email, {'label': false, "attr": {"placeholder": "Adresse e-mail"}}) }}
+        {{ form_row(contactForm.concerne, {'label': false, "attr": {"placeholder": "Concerne"}}) }}
+        {{ form_row(contactForm.message, {'label': false, "attr": {"placeholder": "Votre message"}}) }}
+        <button type="submit">Envoyer</button>
+    {{ form_end(contactForm) }}
 
-<section class="accueil_encheres">
-    <div class="text">
-        <div class="title"><h2>Enchères</h2></div>
-        <div class="subtitle"><p>Déroulé  & organisation des enchères</p></div>
-        <div class="infos">
-            <p class="subinfo">Les enchères auront lieu le</p>
-            <p class="info">14 Décembre 2026</p>
-        </div>
-
-        <div class="txt">
-            <p>Lorem ipsum dolor sit amet consectetur. Rutrum diam massa at enim duis ut sit egestas scelerisque. Leo consequat sed pretium habitant orci quam consequat. Blandit consectetur a accumsan velit vel tellus. Etiam amet id at sed ullamcorper phasellus ornare risus. Enim quam augue condimentum varius adipiscing. In cras turpis purus libero rutrum in commodo ullamcorper tellus. Sollicitudin commodo sit iaculis vulputate rutrum turpis. Cursus suspendisse a suspendisse ornare tortor. Elementum amet mollis morbi tortor sollicitudin. Amet nec eget diam dolor. Egestas aliquam vestibulum amet eu nulla tortor. Sociis ut commodo id ut. Suspendisse purus venenatis imperdiet eu sed elementum. Vehicula ornare cursus nunc etiam nisl et dictum vel amet. Enim nascetur felis.</p>
-        </div>
-    </div>
-</section>
-
-<section class="accueil_artisan">
-    <div class="section-title">
-        <h2>Artisan</h2>
-        <p>Un artisan professionnel et expérimenté</p>
-    </div>
-
-    <div class="artisan_info">
-        <div class="left">
-            <div class="title">
-                <p>Antonio Delmonte</p>
-            </div>
-            <div class="txt">
-                <p>Lorem ipsum dolor sit amet consectetur. Semper tortor pretium id platea quis rhoncus condimentum. Praesent tempus nisl adipiscing cursus sagittis vel. Varius fringilla sed ut etiam ut dictum consectetur. Non a diam commodo vestibulum adipiscing. Tellus massa orci habitasse malesuada lobortis fringilla praesent. Ut eros magna eu nulla. Nec suscipit posuere ornare egestas massa aliquam. Lobortis arcu phasellus amet sed arcu. Eget erat ut odio integer lectus. Nisi est nisi nulla adipiscing suscipit.</p>
-            </div>
-            <div class="btn">
-                <a href="">En savoir plus</a>
-            </div>
-        </div>
-    </div>
-
-    <img class="artisan" src="/img/artisan.png" alt="Image contenant l'artiant Antonio Delmonte">
-</section>
+    {% for message in app.flashes('success') %}
+        <div class="alert-success">{{ message }}</div>
+    {% endfor %}
+    {% for message in app.flashes('error') %}
+        <div class="alert-danger">{{ message }}</div>
+    {% endfor %}
+</div>
 {% endblock %}

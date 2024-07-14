@@ -18,14 +18,14 @@ use Symfony\Component\Validator\Constraints\IsTrue;
 use Symfony\Component\Validator\Constraints\Length;
 use Symfony\Component\Validator\Constraints\NotBlank;
 
-class ContactFormType extends AbstractType
+class MemberFormType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
             ->add('email', EmailType::class)
-            ->add('concerne', TextType::class)
-            ->add('message', TextareaType::class)
+            ->add('firstname', TextType::class)
+            ->add('lastname', TextType::class)
         ;
     }
 

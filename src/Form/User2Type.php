@@ -11,7 +11,7 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class UserType extends AbstractType
+class User2Type extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
@@ -23,12 +23,6 @@ class UserType extends AbstractType
                 'required' => false,
                 'mapped' => false,
                 'attr' => ['autocomplete' => 'new-password'],
-            ])
-            ->add('member', CheckboxType::class, [
-                'required' => false,
-            ])
-            ->add('admin', CheckboxType::class, [
-                'required' => false,
             ])
         ;
     }

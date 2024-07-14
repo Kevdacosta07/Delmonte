@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Collections {{ collection.year }}{% endblock %}
+
+{% block body %}
+<div class="collections">
+    {% for product in products %}
+    <section class="product">
+        <div class="container">
+            <div class="left" style=
+            "background-image: url({{ vich_uploader_asset(product, 'imageFile') }}">
+            </div>
+            <div class="right">
+                <div class="main-title">
+                    <h2>{{ product.name }}</h2>
+                    <p>{{ product.month }} {{ collection.year }}</p>
+                </div>
+
+                <div class="vision">
+                    <div class="title">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h3>Notre vision</h3>
+                    </div>
+                    <p>{{ product.vision }}</p>
+                </div>
+
+                <div class="vision">
+                    <div class="title">
+                        <i class="fa-solid fa-book-open"></i>
+                        <h3>Histoire</h3>
+                    </div>
+                    <p>{{ product.history }}</p>
+                </div>
+
+                <div class="vision">
+                    <div class="title">
+                        <i class="fa-solid fa-star goldstar"></i>
+                        <h3>Informations membres</h3>
+                    </div>
+                    <p>{{ product.history }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% endfor %}
+</div>
+
+
+{% endblock %}

@@ -1,8 +1,8 @@
-body:has(.admin-products-add)
+body:has(.admin-products-edit)
 {
   background: #1E1E1E;
 
-  .admin-products-add
+  .admin-products-edit
   {
     width: 100%;
     display: flex;
@@ -71,6 +71,7 @@ body:has(.admin-products-add)
         border: none;
         color: white;
         font-size: 1.4em;
+        margin: 20px 0;
       }
 
       button
@@ -78,7 +79,151 @@ body:has(.admin-products-add)
         padding: 10px 20px;
         font-size: 1.5em;
         margin-top: 30px;
+        margin-bottom: 30px;
         cursor: pointer;
+      }
+
+      .vich-image
+      {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        div
+        {
+          color: white;
+          margin: 10px 0;
+          font-size: 1.4em;
+          display: flex;
+          justify-content: center;
+          label
+          {
+            margin: 0 20px;
+          }
+        }
+
+        a
+        {
+          color: white;
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px)
+{
+  body:has(.admin-products-edit)
+  {
+    background: #1E1E1E;
+
+    .admin-products-edit
+    {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1
+      {
+        color: white;
+        font-size: 3em;
+        margin-top: 15px;
+      }
+
+      p
+      {
+        color: white;
+        font-size: 1.2em;
+      }
+
+      form
+      {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+
+        input[type="text"]
+        {
+          width: 60%;
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid white;
+          font-size: 1.1em;
+          padding: 10px 0;
+          color: white;
+          margin: 20px 0;
+        }
+
+        input[type="text"]:focus
+        {
+          outline: none;
+        }
+
+        textarea
+        {
+          width: 60%;
+          height: 100px;
+          background: transparent;
+          border: none;
+          border-bottom: 2px solid white;
+          font-size: 1.1em;
+          padding: 5px 0;
+          color: white;
+          margin: 20px 0;
+          resize: none;
+        }
+
+        textarea:focus
+        {
+          outline: none;
+        }
+
+        input[type="file"]
+        {
+          border: none;
+          color: white;
+          font-size: 1.1em;
+          margin: 20px 0;
+        }
+
+        button
+        {
+          padding: 10px 20px;
+          font-size: 1.1em;
+          margin-top: 30px;
+          margin-bottom: 30px;
+          cursor: pointer;
+        }
+
+        .vich-image
+        {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          div
+          {
+            color: white;
+            margin: 10px 0;
+            font-size: 1.2em;
+            display: flex;
+            justify-content: center;
+            label
+            {
+              margin: 0 20px;
+            }
+          }
+
+          a
+          {
+            color: white;
+            font-size: 1.3em;
+          }
+        }
       }
     }
   }

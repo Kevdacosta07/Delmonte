@@ -1,0 +1,605 @@
+.accueil_main {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  background: linear-gradient(-20deg, #000000, #242424, #000000);
+}
+.accueil_main .text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  color: white;
+  margin-left: 50px;
+}
+.accueil_main .text .title h1 {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 100;
+  font-size: 10em;
+  line-height: 0.5em;
+}
+.accueil_main .text .subtitle {
+  margin-bottom: 30px;
+}
+.accueil_main .text .subtitle p {
+  font-weight: 100;
+  font-size: 2.2em;
+}
+.accueil_main .text .txt {
+  margin-bottom: 40px;
+}
+.accueil_main .text .txt p {
+  font-weight: 100;
+  font-size: 1.4em;
+  width: 80%;
+}
+.accueil_main .text .btn a {
+  color: black;
+  background: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+.accueil_main .blackrose {
+  width: 50%;
+  height: auto;
+}
+
+.accueil_encheres {
+  height: 100vh;
+  background: url("/img/background_encheres.jpg") center no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.accueil_encheres .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+.accueil_encheres .text .title h2 {
+  font-size: 6em;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 100;
+  line-height: 0.7em;
+}
+.accueil_encheres .text .subtitle p {
+  font-size: 1.6em;
+  font-weight: 100;
+}
+.accueil_encheres .text .infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 30px 0;
+}
+.accueil_encheres .text .subinfo {
+  font-size: 2em;
+  font-weight: 500;
+}
+.accueil_encheres .text .info {
+  font-size: 2.5em;
+  font-weight: 900;
+  padding: 5px 10px;
+  border: 2px solid white;
+  margin-bottom: 20px;
+}
+.accueil_encheres .text .txt {
+  display: flex;
+  justify-content: center;
+}
+.accueil_encheres .text .txt p {
+  width: 40%;
+  min-width: 500px;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.accueil_encheres::before {
+  content: "";
+  background: black;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.accueil_artisan::before {
+  content: "";
+  background: black;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.accueil_artisan {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  position: relative;
+  background: url("/img/background_jewelry.jpg");
+}
+.accueil_artisan .section-title {
+  margin: 100px 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+.accueil_artisan .section-title h2 {
+  font-family: "Pinyon Script", cursive;
+  font-weight: 100;
+  font-size: 6em;
+  line-height: 0.7em;
+}
+.accueil_artisan .section-title p {
+  font-size: 1.8em;
+  font-weight: 200;
+}
+.accueil_artisan .artisan_info {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: white;
+  height: 60vh;
+}
+.accueil_artisan .artisan_info .left {
+  margin-left: 50px;
+}
+.accueil_artisan .artisan_info .left .title p {
+  font-family: "Pinyon Script", cursive;
+  font-size: 5em;
+  font-weight: 100;
+}
+.accueil_artisan .artisan_info .left .txt p {
+  width: 50%;
+  font-weight: 100;
+  font-size: 1.4em;
+}
+.accueil_artisan .artisan_info .left .btn {
+  margin-top: 40px;
+}
+.accueil_artisan .artisan_info .left .btn a {
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  width: fit-content;
+  font-size: 1.3em;
+  font-weight: 600;
+}
+.accueil_artisan .artisan {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 40%;
+  height: auto;
+}
+.accueil_artisan::before {
+  opacity: 0.75;
+}
+
+/* LAPTOP 768px */
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .accueil_main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    background: linear-gradient(-20deg, #000000, #242424, #000000);
+  }
+  .accueil_main .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    margin-left: 0;
+  }
+  .accueil_main .text .title h1 {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 100;
+    font-size: 8em;
+    line-height: 0.5em;
+  }
+  .accueil_main .text .subtitle {
+    margin-bottom: 30px;
+  }
+  .accueil_main .text .subtitle p {
+    font-weight: 100;
+    font-size: 2em;
+  }
+  .accueil_main .text .txt {
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  .accueil_main .text .txt p {
+    font-weight: 100;
+    font-size: 1.3em;
+    width: 80%;
+  }
+  .accueil_main .text .btn a {
+    color: black;
+    background: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+  .accueil_main .blackrose {
+    width: 0;
+    height: auto;
+    display: none;
+  }
+  .accueil_encheres {
+    height: 100vh;
+    background: url("/img/background_encheres.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .accueil_encheres .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  .accueil_encheres .text .title h2 {
+    font-size: 7em;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 100;
+    line-height: 0.7em;
+  }
+  .accueil_encheres .text .subtitle p {
+    font-size: 1.3em;
+    font-weight: 100;
+  }
+  .accueil_encheres .text .infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  }
+  .accueil_encheres .text .subinfo {
+    font-size: 1.8em;
+    font-weight: 500;
+  }
+  .accueil_encheres .text .info {
+    font-size: 2.3em;
+    font-weight: 900;
+    padding: 5px 10px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+  }
+  .accueil_encheres .text .txt {
+    display: flex;
+    justify-content: center;
+  }
+  .accueil_encheres .text .txt p {
+    width: 60%;
+    min-width: 500px;
+    font-weight: 100;
+    font-size: 1.2em;
+  }
+  .accueil_encheres::before {
+    content: "";
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .accueil_artisan::before {
+    content: "";
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .accueil_artisan {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    background: url("/img/background_jewelry.jpg");
+  }
+  .accueil_artisan .section-title {
+    margin: 100px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+  .accueil_artisan .section-title h2 {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 100;
+    font-size: 6em;
+    line-height: 0.7em;
+  }
+  .accueil_artisan .section-title p {
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+  .accueil_artisan .artisan_info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    height: 60vh;
+  }
+  .accueil_artisan .artisan_info .left {
+    margin-left: 0;
+  }
+  .accueil_artisan .artisan_info .left .title {
+    display: flex;
+    justify-content: center;
+  }
+  .accueil_artisan .artisan_info .left .title p {
+    font-family: "Pinyon Script", cursive;
+    font-size: 4em;
+    font-weight: 100;
+  }
+  .accueil_artisan .artisan_info .left .txt {
+    display: flex;
+    justify-content: center;
+  }
+  .accueil_artisan .artisan_info .left .txt p {
+    width: 80%;
+    font-weight: 100;
+    font-size: 1.1em;
+  }
+  .accueil_artisan .artisan_info .left .btn {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .accueil_artisan .artisan_info .left .btn a {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    width: fit-content;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .accueil_artisan .artisan {
+    display: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0%;
+    height: auto;
+  }
+  .accueil_artisan::before {
+    opacity: 0.75;
+  }
+}
+/* LAPTOP 1024px */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .accueil_main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(-20deg, #000000, #242424, #000000);
+  }
+  .accueil_main .text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    color: white;
+    margin-left: 50px;
+  }
+  .accueil_main .text .title h1 {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 100;
+    font-size: 8em;
+    line-height: 0.5em;
+  }
+  .accueil_main .text .subtitle {
+    margin-bottom: 30px;
+  }
+  .accueil_main .text .subtitle p {
+    font-weight: 100;
+    font-size: 2em;
+  }
+  .accueil_main .text .txt {
+    margin-bottom: 40px;
+  }
+  .accueil_main .text .txt p {
+    font-weight: 100;
+    font-size: 1.1em;
+    width: 100%;
+  }
+  .accueil_main .text .btn a {
+    color: black;
+    background: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1em;
+  }
+  .accueil_main .blackrose {
+    width: 50%;
+    height: auto;
+  }
+  .accueil_encheres {
+    height: 100vh;
+    background: url("/img/background_encheres.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .accueil_encheres .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    z-index: 1;
+  }
+  .accueil_encheres .text .title h2 {
+    font-size: 7em;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 100;
+    line-height: 0.7em;
+  }
+  .accueil_encheres .text .subtitle p {
+    font-size: 1.3em;
+    font-weight: 100;
+  }
+  .accueil_encheres .text .infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+  }
+  .accueil_encheres .text .subinfo {
+    font-size: 1.8em;
+    font-weight: 500;
+  }
+  .accueil_encheres .text .info {
+    font-size: 2.3em;
+    font-weight: 900;
+    padding: 5px 10px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+  }
+  .accueil_encheres .text .txt {
+    display: flex;
+    justify-content: center;
+  }
+  .accueil_encheres .text .txt p {
+    width: 60%;
+    min-width: 500px;
+    font-weight: 100;
+    font-size: 1.2em;
+  }
+  .accueil_encheres::before {
+    content: "";
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .accueil_artisan::before {
+    content: "";
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .accueil_artisan {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    background: url("/img/background_jewelry.jpg");
+  }
+  .accueil_artisan .section-title {
+    margin: 100px 0 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: relative;
+  }
+  .accueil_artisan .section-title h2 {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 100;
+    font-size: 6em;
+    line-height: 0.7em;
+  }
+  .accueil_artisan .section-title p {
+    font-size: 1.5em;
+    font-weight: 200;
+  }
+  .accueil_artisan .artisan_info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    color: white;
+    height: 60vh;
+  }
+  .accueil_artisan .artisan_info .left {
+    margin-left: 50px;
+  }
+  .accueil_artisan .artisan_info .left .title p {
+    font-family: "Pinyon Script", cursive;
+    font-size: 4em;
+    font-weight: 100;
+  }
+  .accueil_artisan .artisan_info .left .txt p {
+    width: 60%;
+    font-weight: 100;
+    font-size: 1.1em;
+  }
+  .accueil_artisan .artisan_info .left .btn {
+    margin-top: 40px;
+  }
+  .accueil_artisan .artisan_info .left .btn a {
+    padding: 10px 20px;
+    background: white;
+    color: black;
+    width: fit-content;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  .accueil_artisan .artisan {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 45%;
+    height: auto;
+  }
+  .accueil_artisan::before {
+    opacity: 0.75;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,281 @@
+footer.footer .newsLetter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+  background: url("/img/background_footer.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+footer.footer .newsLetter h2 {
+  font-size: 7em;
+  color: white;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 100;
+  line-height: 0.8em;
+  position: relative;
+}
+footer.footer .newsLetter p {
+  color: white;
+  position: relative;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+footer.footer .newsLetter form {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+}
+footer.footer .newsLetter form .input-submit {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+}
+footer.footer .newsLetter form .input-submit input {
+  width: 25%;
+  min-width: 350px;
+  border: none;
+  margin-right: 20px;
+  padding: 10px 10px;
+  font-size: 1em;
+  font-weight: 600;
+}
+footer.footer .newsLetter form .input-submit input:focus {
+  outline: none;
+}
+footer.footer .newsLetter form .input-submit button {
+  background: none;
+  border: 1px solid white;
+  padding: 0 20px;
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+}
+footer.footer .newsLetter .error-msg, footer.footer .newsLetter .success-msg {
+  font-size: 1.2em;
+  color: red;
+  font-weight: 400;
+  position: relative;
+  margin-top: 20px;
+}
+footer.footer .newsLetter .success-msg {
+  color: lime;
+}
+footer.footer .endfooter {
+  background: #1E1E1E;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+footer.footer .endfooter .footer-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+}
+footer.footer .endfooter .footer-nav li {
+  margin: 10px 0;
+}
+footer.footer .endfooter .footer-nav li a {
+  color: white;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+footer.footer .endfooter .footer-logo {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  margin: 30px 0;
+}
+footer.footer .endfooter .footer-logo li {
+  margin: 0 20px;
+}
+footer.footer .endfooter .footer-logo i {
+  font-size: 3.5em;
+  color: white;
+}
+footer.footer .endfooter .copyright {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+}
+footer.footer .endfooter .copyright p {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 100;
+}
+footer.footer .endfooter .footer-end {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+footer.footer .endfooter .footer-end p {
+  color: #b2b2b2;
+  font-size: 1.3em;
+  font-weight: 100;
+}
+footer.footer .newsLetter::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 1024px) {
+  footer.footer .newsLetter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 50px 0;
+    background: url("/img/background_footer.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  footer.footer .newsLetter h2 {
+    font-size: 5em;
+    color: white;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 100;
+    line-height: 0.7em;
+    position: relative;
+  }
+  footer.footer .newsLetter p {
+    color: white;
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 100;
+  }
+  footer.footer .newsLetter form {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+  }
+  footer.footer .newsLetter form .input-submit {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  footer.footer .newsLetter form .input-submit input {
+    width: 25%;
+    min-width: 350px;
+    border: none;
+    margin-right: 20px;
+    padding: 10px 10px;
+    font-size: 1em;
+    font-weight: 600;
+  }
+  footer.footer .newsLetter form .input-submit input:focus {
+    outline: none;
+  }
+  footer.footer .newsLetter form .input-submit button {
+    background: none;
+    border: 1px solid white;
+    padding: 0 20px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  footer.footer .newsLetter .error-msg, footer.footer .newsLetter .success-msg {
+    font-size: 1.2em;
+    color: red;
+    font-weight: 400;
+    position: relative;
+    margin-top: 20px;
+  }
+  footer.footer .newsLetter .success-msg {
+    color: lime;
+  }
+  footer.footer .endfooter {
+    background: #1E1E1E;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  footer.footer .endfooter .footer-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    list-style: none;
+  }
+  footer.footer .endfooter .footer-nav li {
+    margin: 10px 0;
+  }
+  footer.footer .endfooter .footer-nav li a {
+    color: white;
+    font-weight: 100;
+    text-transform: uppercase;
+    font-size: 1.3em;
+  }
+  footer.footer .endfooter .footer-logo {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  footer.footer .endfooter .footer-logo li {
+    margin: 0 20px;
+  }
+  footer.footer .endfooter .footer-logo i {
+    font-size: 3em;
+    color: white;
+  }
+  footer.footer .endfooter .copyright {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  footer.footer .endfooter .copyright p {
+    color: white;
+    font-size: 1.2em;
+    font-weight: 100;
+  }
+  footer.footer .endfooter .footer-end {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+  }
+  footer.footer .endfooter .footer-end p {
+    color: #b2b2b2;
+    font-size: 1em;
+    font-weight: 100;
+  }
+  footer.footer .newsLetter::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.7;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

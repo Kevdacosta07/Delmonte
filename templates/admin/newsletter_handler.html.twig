@@ -1,7 +1,17 @@
 {% extends 'baselogin.html.twig' %}
 
-{% block title %}Pannel administrateur | Delmonte{% endblock %}
+{% block title %}Envoyer une newsletter | Delmonte{% endblock %}
 
 {% block body %}
-
+<div class="admin-newsletter">
+    <div class="title">
+        <h2>Envoyer une newsletter</h2>
+        <p>Remplissez le formulaire ci-dessous</p>
+    </div>
+    {{ form_start(form) }}
+        {{ form_widget(form.subject, {'label': false, "attr": {"placeholder": "Sujet"}}) }}
+        {{ form_widget(form.message, {'label': false, "attr": {"placeholder": "Message de la newsletter"}}) }}
+    <button type="submit">Envoyer la newsletter</button>
+    {{ form_end(form) }}
+</div>
 {% endblock %}

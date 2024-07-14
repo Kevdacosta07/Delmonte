@@ -1,0 +1,240 @@
+.admin-collections-show {
+  height: 100vh;
+  background: linear-gradient(-30deg, #090909 28%, #313131 50%, #090909 70%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.admin-collections-show .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  width: 100%;
+}
+.admin-collections-show .title h2 {
+  color: white;
+  font-family: "Pinyon Script", cursive;
+  font-weight: 200;
+  font-size: 5em;
+}
+.admin-collections-show .title p {
+  color: white;
+  font-size: 1.2em;
+}
+.admin-collections-show .products-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.admin-collections-show .products-container .card {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  background: white;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+}
+.admin-collections-show .products-container .card .title {
+  padding: 0;
+  background: linear-gradient(10deg, #131313, #343434);
+}
+.admin-collections-show .products-container .card .title h2 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 3em;
+  padding: 10px 0 5px 0;
+  font-weight: 800;
+}
+.admin-collections-show .products-container .card .title p {
+  color: white;
+  font-size: 1.4em;
+  padding-bottom: 15px;
+}
+.admin-collections-show .products-container .card .text {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.admin-collections-show .products-container .card .text .container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.admin-collections-show .products-container .card .text .container p {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.admin-collections-show .products-container .card .text .container h2 {
+  width: fit-content;
+  margin-bottom: 10px;
+  font-size: 1.7em;
+}
+.admin-collections-show .products-container .card .icons-settings {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.admin-collections-show .products-container .card .icons-settings i {
+  color: white;
+  font-size: 1.2em;
+  margin: 0 5px;
+  cursor: pointer;
+}
+.admin-collections-show .products-container .card .icons-settings form button {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  border: none;
+}
+.admin-collections-show .create-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: black;
+  background: white;
+  right: 20px;
+  bottom: 20px;
+}
+.admin-collections-show .create-product i {
+  margin-top: 3px;
+  margin-right: 10px;
+  color: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .admin-collections-show {
+    height: 100vh;
+    background: linear-gradient(-30deg, #090909 28%, #313131 50%, #090909 70%);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .admin-collections-show .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    width: 100%;
+  }
+  .admin-collections-show .title h2 {
+    color: white;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 200;
+    font-size: 4em;
+  }
+  .admin-collections-show .title p {
+    color: white;
+    font-size: 1.1em;
+  }
+  .admin-collections-show .products-container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+  }
+  .admin-collections-show .products-container .card {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    height: 250px;
+    background: white;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .admin-collections-show .products-container .card .title {
+    padding: 0;
+    background: linear-gradient(10deg, #131313, #343434);
+  }
+  .admin-collections-show .products-container .card .title h2 {
+    color: white;
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    padding: 10px 0 5px 0;
+    font-weight: 800;
+  }
+  .admin-collections-show .products-container .card .title p {
+    color: white;
+    font-size: 1.2em;
+    padding-bottom: 15px;
+  }
+  .admin-collections-show .products-container .card .text {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .admin-collections-show .products-container .card .text .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .admin-collections-show .products-container .card .text .container p {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 0.8em;
+  }
+  .admin-collections-show .products-container .card .text .container h2 {
+    width: fit-content;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+  }
+  .admin-collections-show .products-container .card .icons-settings {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .admin-collections-show .products-container .card .icons-settings i {
+    color: white;
+    font-size: 1.2em;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .admin-collections-show .products-container .card .icons-settings form button {
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    border: none;
+  }
+  .admin-collections-show .create-product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 1.2em;
+    color: black;
+    background: white;
+    right: 20px;
+    bottom: 20px;
+  }
+  .admin-collections-show .create-product i {
+    margin-top: 3px;
+    margin-right: 10px;
+    color: black;
+  }
+}
+
+/*# sourceMappingURL=admin_collection_show.css.map */

@@ -1,0 +1,86 @@
+body:has(.admin-collections) {
+  background: #1c1c1c;
+}
+body:has(.admin-collections) .create-collection {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: black;
+  font-weight: 700;
+  font-size: 1.3em;
+  border-radius: 5px;
+}
+body:has(.admin-collections) .admin-collections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body:has(.admin-collections) .admin-collections .title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0;
+}
+body:has(.admin-collections) .admin-collections .title h2 {
+  font-size: 4em;
+}
+body:has(.admin-collections) .admin-collections .title p {
+  font-size: 1.3em;
+}
+body:has(.admin-collections) .admin-collections .collections {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+body:has(.admin-collections) .admin-collections .collections .container {
+  position: relative;
+  display: flex;
+}
+body:has(.admin-collections) .admin-collections .collections .container .coll {
+  width: 100%;
+  padding: 30px 0;
+  background: linear-gradient(-120deg, #232323, #111111);
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+}
+body:has(.admin-collections) .admin-collections .collections .container .coll a {
+  font-size: 2em;
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  margin-left: 20px;
+}
+body:has(.admin-collections) .admin-collections .collections .container .icons-settings {
+  display: flex;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+body:has(.admin-collections) .admin-collections .collections .container .icons-settings i, body:has(.admin-collections) .admin-collections .collections .container .icons-settings a {
+  color: white;
+}
+body:has(.admin-collections) .admin-collections .collections .container .icons-settings i {
+  margin: 0 5px;
+  font-size: 2em;
+  cursor: pointer;
+}
+body:has(.admin-collections) .admin-collections .collections .container .icons-settings i.trash {
+  margin-top: 3px;
+  color: red;
+}
+body:has(.admin-collections) .admin-collections .collections .container .icons-settings form i {
+  color: white;
+}
+body:has(.admin-collections) .admin-collections .collections .container .icons-settings form button {
+  background: transparent;
+  border: none;
+}
+
+/*# sourceMappingURL=admin_collection.css.map */

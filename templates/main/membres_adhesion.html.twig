@@ -1,6 +1,21 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Membres | DelMonte{% endblock %}
+{% block title %}Devenir membre | DelMonte{% endblock %}
 
 {% block body %}
+    <div class="member-adhesion">
+        <div class="title">
+            <h2>Devenir membre</h2>
+            <p>Lorem ipsum dolor sit amet consectetur. Amet tempor orci malesuada et egestas. Egestas id luctus lorem massa sollicitudin ac convallis congue at. Fermentum gravida scelerisque nibh sed sit sem duis dui luctus. Ut pellentesque imperdiet quam condimentum integer enim augue sagittis.</p>
+        </div>
+        {{ form_start(form_membreadh) }}
+        {{ form_widget(form_membreadh.email, {'label': false, 'attr': {'placeholder': 'Votre adresse e-mail', 'value': app.user.email, "disabled": true}}) }}
+            {{ form_widget(form_membreadh.firstname, {'label': false, "attr": {"placeholder": "Votre nom", 'value': app.user.firstname, "disabled": true}}) }}
+            {{ form_widget(form_membreadh.lastname, {'label': false, "attr": {"placeholder": "Votre prénom", 'value': app.user.lastname, "disabled": true}}) }}
+            <button>Envoyer une demande</button>
+            {% for message in app.flashes("success") %}
+                <div class="error-msg">{{ message }}</div>
+            {% endfor %}
+        {{ form_end(form_membreadh) }}
+    </div>
 {% endblock %}

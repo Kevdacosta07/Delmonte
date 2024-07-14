@@ -1,7 +1,22 @@
-{% extends 'base.html.twig' %}
+{% extends 'baselogin.html.twig' %}
 
-{% block title %}Accueil | DelMonte {% endblock %}
+{% block title %}Biographie | DelMonte{% endblock %}
 
 {% block body %}
+<div class="biographie">
+    <img src="/img/artisan.png" alt="Image de antonio delmonte se tenant le menton">
 
+    <div class="artisan-info">
+        <p class="lastname">Antonio</p>
+        <p class="firstname">Del Monte</p>
+        <p class="bdate"><span>1</span> Juin <span>1978</span></p>
+    </div>
+
+    <div class="biographiemore">
+        <a href="/biographie/details">
+            <p>Biographie</p>
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </div>
+</div>
 {% endblock %}
