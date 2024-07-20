@@ -146,7 +146,7 @@
   width: 0;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   .main-navigation {
     padding: 10px 15px;
     display: flex;
@@ -261,7 +261,7 @@
   }
   .openable-menu .container .navig ul li a {
     color: white;
-    font-size: 1.8em;
+    font-size: 1.5em;
   }
   .openable-menu .container .navig ul li .admin {
     color: red;

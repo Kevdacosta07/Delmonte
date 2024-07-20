@@ -107,7 +107,7 @@ body:has(.admin-users-edit)
   }
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1600px)
 {
   body:has(.admin-users-edit)
   {
@@ -119,13 +119,14 @@ body:has(.admin-users-edit)
       display: flex;
       flex-direction: column;
       align-items: center;
-      height: 100vh;
+      height: auto;
+      margin-top: 20px;
       justify-content: center;
 
       h1
       {
         color: white;
-        font-size: 3em;
+        font-size: 2em;
       }
 
       p

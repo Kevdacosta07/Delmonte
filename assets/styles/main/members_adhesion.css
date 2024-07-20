@@ -19,6 +19,7 @@
 }
 .member-adhesion .title p {
   width: 50%;
+  text-align: center;
 }
 .member-adhesion form {
   margin: 30px 0;
@@ -50,7 +51,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1600px) {
   .member-adhesion {
     display: flex;
     flex-direction: column;

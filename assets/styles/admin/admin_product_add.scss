@@ -84,7 +84,7 @@ body:has(.admin-products-add)
   }
 }
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 1600px)
 {
   body:has(.admin-products-add)
   {
@@ -167,6 +167,7 @@ body:has(.admin-products-add)
           font-size: 1.2em;
           margin-top: 30px;
           cursor: pointer;
+          margin-bottom: 20px;
         }
       }
     }

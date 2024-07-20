@@ -403,7 +403,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   .membres {
     background: linear-gradient(-30deg, #111111 0%, #2f2f2f 50%, #111111 100%);
 
@@ -467,7 +467,7 @@
             img {
               border-radius: 10px;
               width: 85%;
-              height: 210px;
+              height: 280px;
               object-fit: cover;
               object-position: center;
             }
@@ -519,7 +519,7 @@
             img {
               border-radius: 10px;
               width: 85%;
-              height: 210px;
+              height: 280px;
               object-fit: cover;
               object-position: center;
             }

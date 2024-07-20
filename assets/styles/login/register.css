@@ -121,7 +121,7 @@
   opacity: 0.7;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1600px) {
   .register {
     display: flex;
     height: 100vh;
@@ -139,7 +139,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
   }
   .register .left .title h1 {
     color: white;
@@ -176,7 +176,7 @@
     border: none;
     border-bottom: 2px solid white;
     color: white;
-    font-size: 1.1em;
+    font-size: 1em;
     padding: 5px;
   }
   .register .left form div input:focus {
@@ -187,7 +187,7 @@
     flex-direction: column;
     color: white;
     align-items: center;
-    margin: 30px 0 60px 0;
+    margin: 20px 0 60px 0;
   }
   .register .left form .create-account .noaccount {
     font-size: 1.1em;

@@ -63,7 +63,7 @@ body:has(.admin-products-add) .admin-products-add form button {
   cursor: pointer;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1600px) {
   body:has(.admin-products-add) {
     background: #1E1E1E;
   }
@@ -127,6 +127,7 @@ body:has(.admin-products-add) .admin-products-add form button {
     font-size: 1.2em;
     margin-top: 30px;
     cursor: pointer;
+    margin-bottom: 20px;
   }
 }
 

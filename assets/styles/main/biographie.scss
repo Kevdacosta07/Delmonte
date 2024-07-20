@@ -8,6 +8,12 @@
   align-items: flex-end;
   position: relative;
 
+  img
+  {
+    width: 45%;
+    height: auto;
+  }
+
 
   .artisan-info
   {
@@ -91,7 +97,7 @@
 
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1600px) {
   .biographie
   {
     width: 100%;

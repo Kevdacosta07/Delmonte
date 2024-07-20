@@ -84,7 +84,7 @@ body:has(.admin-products-edit) .admin-products-edit form .vich-image a {
   font-size: 1.3em;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1600px) {
   body:has(.admin-products-edit) {
     background: #1E1E1E;
   }

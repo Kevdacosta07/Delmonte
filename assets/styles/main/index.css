@@ -12,16 +12,22 @@
   color: white;
   margin-left: 50px;
 }
-.accueil_main .text .title h1 {
+.accueil_main .text .title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+}
+.accueil_main .text .title-container .title h1 {
   font-family: "Pinyon Script", cursive;
   font-weight: 100;
   font-size: 10em;
   line-height: 0.5em;
 }
-.accueil_main .text .subtitle {
+.accueil_main .text .title-container .subtitle {
   margin-bottom: 30px;
 }
-.accueil_main .text .subtitle p {
+.accueil_main .text .title-container .subtitle p {
   font-weight: 100;
   font-size: 2.2em;
 }
@@ -407,7 +413,7 @@
   }
 }
 /* LAPTOP 1024px */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   .accueil_main {
     display: flex;
     align-items: center;
@@ -594,7 +600,7 @@
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 45%;
+    width: 35%;
     height: auto;
   }
   .accueil_artisan::before {
