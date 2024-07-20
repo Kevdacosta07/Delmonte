@@ -20,13 +20,11 @@ Ce projet a été réalisé dans le cadre d'un projet scolaire informatique, vis
 ### Clonez le dépôt
     git clone git@github.com:Kevdacosta07/Delmonte.git (Nom du dossier)
 
-### Accédez au répertoire du projet (Avec le terminal)
-Vous pouvez essayer de créer un dossier
-cd Delmonte
+Ensuite accédez au répertoire du projet (Avec le terminal)
 
 
 ### Installation des dépendances côté backend & frontend
-> composer install (Commande terminal)
+> composer install
 
 ## Configuration du serveur
 Modifiez le fichier **.env** présent dans le dossier avec vos paramètres spécifiques, tels que la configuration de la base de données (Chemin vers le fichier : **Delmonte/backend/.env**).
@@ -45,6 +43,9 @@ L'application devrait maintenant être accessible à l'adresse http://localhost:
     php bin/console make:migration
     php bin/console d:m:m
 
+### En cas d'erreur
+En cas de problème, supprimez tous les fichiers présent dans **migrations** puis réessayez, il est possible qu'une erreur s'affiche mais que les tables ont été créées avec succès donc vérifiez également la base de donnée, si toutes les tables ont été installées avec succès vous devriez avoir minimum 5 tables. 
+
 ## Compte utilisateurs
 Pour générer les comptes utilisateurs veuillez-vous rendre à cette adresse une fois le site lancé
 > http://localhost/8fhskru2jsk
@@ -56,7 +57,3 @@ Pour générer les comptes utilisateurs veuillez-vous rendre à cette adresse un
 ### Compte non administrateur
     email: user@mail.ch
     mot de passe: password
-
-
-## En cas d'erreur
-En cas de problème, veuillez créer un dossier appelé **uploads** dans **frontend/public**
