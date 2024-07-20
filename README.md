@@ -4,7 +4,7 @@ Ce projet a été réalisé dans le cadre d'un projet scolaire informatique, vis
 
 ## Prérequis
 
-- Lien d'installation [PHP](https://nodejs.org/en/download)
+- Lien d'installation [PHP](https://www.php.net/downloads.php)
 - Lien d'installation [GIT](https://git-scm.com/downloads)
 - Lien d'installation [SYMFONY](https://symfony.com/doc/current/setup.html)
 
