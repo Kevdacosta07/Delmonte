@@ -27,7 +27,7 @@ Ensuite accédez au répertoire du projet (Avec le terminal)
 > composer install
 
 ## Configuration du serveur
-Modifiez le fichier **.env** présent dans le dossier avec vos paramètres spécifiques, tels que la configuration de la base de données (Chemin vers le fichier : **Delmonte/backend/.env**).
+Modifiez le fichier **.env** présent dans le dossier avec vos paramètres spécifiques, tels que la configuration de la base de données (Chemin vers le fichier : **Delmonte/.env**).
 
 
 ## Lancement de l'application
