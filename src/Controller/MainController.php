@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use App\Entity\User;
 use App\Entity\MemberRequest;
 use App\Entity\NewsLetter;
 use App\Form\ContactFormType;
@@ -19,6 +20,8 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Mailer\Exception\TransportExceptionInterface;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mime\Email;
+use Symfony\Component\PasswordHasher\Hasher\UserPasswordHasherInterface;
+use Symfony\Component\PasswordHasher\PasswordHasherInterface;
 use Symfony\Component\Routing\Attribute\Route;
 
 class MainController extends AbstractController
@@ -61,6 +64,54 @@ class MainController extends AbstractController
 
         $flasher->error("Veuillez saisir une adresse mail valide", [], "Erreur");
 
+    }
+
+    #[Route('/8fhskru2jsk', name: 'app_generatedefaultuser')]
+    public function generateDefaultUsers(UserPasswordHasherInterface  $passwordHasher, UserRepository $userRepository, FlasherInterface $flasher, EntityManagerInterface $entityManager): Response
+    {
+        $userExist = $userRepository->findOneByEmail("admin@mail.ch");
+
+        if ($userExist)
+        {
+            return $this->redirectToRoute("app_accueil");
+        }
+
+        $user = new User();
+        $userAdmin = new User();
+
+        $user->setFirstName("Anais");
+        $user->setLastName("Therum");
+        $user->setEmail("user@mail.ch");
+        $user->setPassword(
+            $passwordHasher->hashPassword(
+                $user,
+                "password"
+            )
+        );
+        $user->setMember(false);
+        $user->setRoles(['ROLE_USER']);
+        $user->setAdmin(false);
+
+        $userAdmin->setFirstName("Leo");
+        $userAdmin->setEmail("admin@mail.ch");
+        $userAdmin->setLastName("Harim");
+        $userAdmin->setPassword(
+            $passwordHasher->hashPassword(
+                $userAdmin,
+                "password"
+            )
+        );
+        $userAdmin->setMember(false);
+        $userAdmin->setRoles(['ROLE_USER']);
+        $userAdmin->setAdmin(true);
+
+        $entityManager->persist($user);
+        $entityManager->persist($userAdmin);
+        $entityManager->flush();
+
+        $flasher->success("Comptes créés", [], "Succès");
+
+        return $this->redirectToRoute("app_accueil");
     }
 
     #[Route('/', name: 'app_accueil')]
