@@ -198,6 +198,215 @@
 
 /* Tablet */
 
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .membres {
+    background: linear-gradient(-30deg, #111111 0%, #2f2f2f 50%, #111111 100%);
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+      margin-bottom: 50px;
+
+      h2 {
+        color: white;
+        font-size: 5em;
+        font-weight: 100;
+        font-family: "Pinyon Script", cursive;
+      }
+
+      p {
+        box-sizing: border-box;
+        color: white;
+        font-size: 1em;
+        padding: 0 10px;
+        font-weight: 100;
+        width: 95%;
+        text-align: left;
+      }
+    }
+
+    .member-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .container {
+        width: 90%;
+
+        .title {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          h2 {
+            font-size: 4em;
+          }
+
+          p {
+            font-size: 1.3em;
+            text-align: center;
+          }
+        }
+
+        .card1 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column-reverse;
+          margin: 70px 0;
+
+          .left {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+
+            img {
+              border-radius: 10px;
+              width: 380px;
+              height: 210px;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .right {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 90%;
+            align-items: center;
+
+            h3 {
+              color: -moz-win-communicationstext;
+              font-size: 2em;
+              font-weight: 500;
+              margin-bottom: 10px;
+
+              .silver {
+                background: linear-gradient(to right, #4A4A4A, #FFFFFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+
+              .diamond {
+                background: linear-gradient(to right, #084996, #65ABFF);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+
+            p {
+              font-weight: 200;
+              font-size: 1.1em;
+            }
+          }
+        }
+
+        .card2 {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+          margin: 70px 0;
+
+          .right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+
+            img {
+              border-radius: 10px;
+              width: 380px;
+              height: 210px;
+              object-fit: cover;
+              object-position: center;
+            }
+          }
+
+          .left {
+            display: flex;
+            flex-direction: column;
+            color: white;
+            width: 90%;
+            align-items: center;
+
+            h3 {
+              color: -moz-win-communicationstext;
+              font-size: 2em;
+              font-weight: 500;
+              margin-bottom: 10px;
+
+              .ruby {
+                background: linear-gradient(to right, #76001F, #DC003A);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+
+              .gold {
+                background: linear-gradient(to right, #52462A, #C1A96A);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+
+            p {
+              font-weight: 200;
+              font-size: 1.1em;
+            }
+          }
+        }
+      }
+    }
+
+    .become-member
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 5rem 0;
+
+      h2
+      {
+        color: white;
+        font-size: 3.3em;
+        font-weight: 100;
+        font-family: "Pinyon Script", cursive;
+      }
+
+      p
+      {
+        color: white;
+        font-size: 0.9em;
+        width: 70%;
+      }
+
+      a
+      {
+        padding: 10px 20px;
+        background: white;
+        color: black;
+        margin: 40px 0;
+        font-weight: 600;
+        font-size: 1.2em;
+      }
+
+      .currentlyMember
+      {
+        width: fit-content;
+        margin-top: 40px;
+        color: orange;
+      }
+    }
+  }
+}
+
+/* Tablet */
+
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .membres {
     background: linear-gradient(-30deg, #111111 0%, #2f2f2f 50%, #111111 100%);

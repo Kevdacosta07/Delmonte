@@ -121,7 +121,7 @@
   opacity: 0.7;
 }
 
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 769px) and (max-width: 1600px) {
   .register {
     display: flex;
     height: 100vh;
@@ -216,6 +216,254 @@
     width: 55%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/img/background_login.png");
+    position: relative;
+    color: white;
+    align-items: center;
+  }
+  .register .right h2 {
+    font-family: "Pinyon Script", cursive;
+    position: relative;
+    font-size: 5em;
+    font-weight: 100;
+  }
+  .register .right p {
+    position: relative;
+    font-size: 1em;
+    width: 85%;
+  }
+  .register .right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.7;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .register {
+    display: flex;
+    height: 100vh;
+  }
+  .register .left {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-50deg, #1B191C, #2E2E2E, #1B191C);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .register .left .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .register .left .title h1 {
+    color: white;
+    font-size: 4em;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 100;
+    line-height: 0.8em;
+  }
+  .register .left .title p {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    width: 340px;
+    font-weight: 300;
+  }
+  .register .left form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .register .left form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .register .left form div input {
+    width: 70%;
+    margin-bottom: 25px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 0.9em;
+    padding: 5px;
+  }
+  .register .left form div input:focus {
+    outline: none;
+  }
+  .register .left form .create-account {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin: 20px 0 60px 0;
+  }
+  .register .left form .create-account .noaccount {
+    font-size: 1em;
+    color: white;
+  }
+  .register .left form .create-account a {
+    text-decoration: underline;
+    font-size: 1.05em;
+    font-weight: 700;
+    color: white;
+  }
+  .register .left form button {
+    border: none;
+    font-size: 1.6em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .register .left form .error-msg {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #ff4444;
+    font-weight: 300;
+  }
+  .register .right {
+    width: 0;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("/img/background_login.png");
+    position: relative;
+    color: white;
+    align-items: center;
+  }
+  .register .right h2 {
+    font-family: "Pinyon Script", cursive;
+    position: relative;
+    font-size: 5em;
+    font-weight: 100;
+  }
+  .register .right p {
+    position: relative;
+    font-size: 1em;
+    width: 85%;
+  }
+  .register .right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.7;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .register {
+    display: flex;
+    height: 100vh;
+  }
+  .register .left {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-50deg, #1B191C, #2E2E2E, #1B191C);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .register .left .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .register .left .title h1 {
+    color: white;
+    font-size: 4em;
+    font-family: "Pinyon Script", cursive;
+    font-weight: 100;
+    line-height: 0.8em;
+  }
+  .register .left .title p {
+    color: white;
+    font-size: 1em;
+    text-align: center;
+    width: 340px;
+    font-weight: 300;
+  }
+  .register .left form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .register .left form div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .register .left form div input {
+    width: 70%;
+    margin-bottom: 25px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-size: 0.9em;
+    padding: 5px;
+  }
+  .register .left form div input:focus {
+    outline: none;
+  }
+  .register .left form .create-account {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin: 20px 0 60px 0;
+  }
+  .register .left form .create-account .noaccount {
+    font-size: 1em;
+    color: white;
+  }
+  .register .left form .create-account a {
+    text-decoration: underline;
+    font-size: 1.05em;
+    font-weight: 700;
+    color: white;
+  }
+  .register .left form button {
+    border: none;
+    font-size: 1.6em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .register .left form .error-msg {
+    margin-top: 30px;
+    font-size: 1.5em;
+    color: #ff4444;
+    font-weight: 300;
+  }
+  .register .right {
+    width: 0;
+    height: 100%;
+    display: none;
     flex-direction: column;
     justify-content: center;
     background-image: url("/img/background_login.png");

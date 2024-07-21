@@ -18,6 +18,7 @@
       flex-direction: column;
       align-items: center;
       width: fit-content;
+
       .title h1 {
         font-family: "Pinyon Script", cursive;
         font-weight: 100;
@@ -235,7 +236,240 @@
   }
 }
 
-/* LAPTOP 768px */
+/* LAPTOP 1024px */
+@media screen and (min-width: 769px) and (max-width: 1600px) {
+  .accueil_main {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background: linear-gradient(-20deg, #000000, #242424, #000000);
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+      color: white;
+      margin-left: 50px;
+
+      .title h1 {
+        font-family: "Pinyon Script", cursive;
+        font-weight: 100;
+        font-size: 8em;
+        line-height: 0.5em;
+      }
+
+      .subtitle {
+        margin-bottom: 30px;
+
+        p {
+          font-weight: 100;
+          font-size: 2em;
+        }
+      }
+
+      .txt {
+        margin-bottom: 40px;
+
+        p {
+          font-weight: 100;
+          font-size: 1.1em;
+          width: 100%;
+        }
+      }
+
+      .btn a {
+        color: black;
+        background: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1em;
+      }
+    }
+
+    .blackrose {
+      width: 50%;
+      height: auto;
+    }
+  }
+
+  .accueil_encheres {
+    height: 100vh;
+    background: url("/img/background_encheres.jpg") center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      position: relative;
+      z-index: 1;
+
+      .title h2 {
+        font-size: 7em;
+        font-family: "Pinyon Script", cursive;
+        font-weight: 100;
+        line-height: 0.7em;
+      }
+
+      .subtitle {
+        p {
+          font-size: 1.3em;
+          font-weight: 100;
+        }
+      }
+
+      .infos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px 0;
+      }
+
+      .subinfo {
+        font-size: 1.8em;
+        font-weight: 500;
+      }
+
+      .info {
+        font-size: 2.3em;
+        font-weight: 900;
+        padding: 5px 10px;
+        border: 2px solid white;
+        margin-bottom: 20px;
+      }
+
+      .txt {
+        display: flex;
+        justify-content: center;
+
+        p {
+          width: 60%;
+          min-width: 500px;
+          font-weight: 100;
+          font-size: 1.2em;
+        }
+      }
+    }
+
+    &::before {
+      content: "";
+      background: black;
+      opacity: 0.8;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+  }
+
+  .accueil_artisan::before {
+    content: "";
+    background: black;
+    opacity: 0.8;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .accueil_artisan {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+    background: url("/img/background_jewelry.jpg");
+
+    .section-title {
+      margin: 100px 0 50px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      position: relative;
+
+      h2 {
+        font-family: "Pinyon Script", cursive;
+        font-weight: 100;
+        font-size: 6em;
+        line-height: 0.7em;
+      }
+
+      p {
+        font-size: 1.5em;
+        font-weight: 200;
+      }
+    }
+
+    .artisan_info {
+      display: flex;
+      align-items: center;
+      position: relative;
+      color: white;
+      height: 60vh;
+
+      .left {
+        margin-left: 50px;
+
+        .title {
+          p {
+            font-family: "Pinyon Script", cursive;
+            font-size: 4em;
+            font-weight: 100;
+          }
+        }
+
+        .txt {
+          p {
+            width: 60%;
+            font-weight: 100;
+            font-size: 1.1em;
+          }
+        }
+
+        .btn {
+          margin-top: 40px;
+
+          a {
+            padding: 10px 20px;
+            background: white;
+            color: black;
+            width: fit-content;
+            font-size: 1em;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+
+    .artisan {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 35%;
+      height: auto;
+    }
+
+    &::before {
+      opacity: 0.75;
+    }
+  }
+}
+
+/* Tablette 768px */
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .accueil_main {
     display: flex;
@@ -482,46 +716,54 @@
   }
 }
 
-
-/* LAPTOP 1024px */
-@media screen and (min-width: 769px) and (max-width: 1600px) {
+/* Mobile 425px */
+@media screen and (min-width: 0px) and (max-width: 425px) {
   .accueil_main {
     display: flex;
     align-items: center;
     height: 100vh;
+    justify-content: center;
     position: relative;
     background: linear-gradient(-20deg, #000000, #242424, #000000);
 
     .text {
       display: flex;
       flex-direction: column;
-      width: 50%;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
       color: white;
-      margin-left: 50px;
+      margin-left: 0;
 
-      .title h1 {
-        font-family: "Pinyon Script", cursive;
-        font-weight: 100;
-        font-size: 8em;
-        line-height: 0.5em;
-      }
-
-      .subtitle {
-        margin-bottom: 30px;
-
-        p {
+      .title-container
+      {
+        .title h1 {
+          font-family: "Pinyon Script", cursive;
           font-weight: 100;
-          font-size: 2em;
+          font-size: 6em;
+          line-height: 0.5em;
         }
+
+        .subtitle {
+          margin-bottom: 30px;
+
+          p {
+            font-weight: 100;
+            font-size: 2em;
+          }
+        }
+
       }
 
       .txt {
-        margin-bottom: 40px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
 
         p {
           font-weight: 100;
-          font-size: 1.1em;
-          width: 100%;
+          font-size: 1.2em;
+          width: 80%;
         }
       }
 
@@ -531,13 +773,14 @@
         padding: 10px 20px;
         text-decoration: none;
         font-weight: 500;
-        font-size: 1em;
+        font-size: 1.2em;
       }
     }
 
     .blackrose {
-      width: 50%;
+      width: 0;
       height: auto;
+      display: none;
     }
   }
 
@@ -560,7 +803,7 @@
       z-index: 1;
 
       .title h2 {
-        font-size: 7em;
+        font-size: 6em;
         font-family: "Pinyon Script", cursive;
         font-weight: 100;
         line-height: 0.7em;
@@ -582,12 +825,12 @@
       }
 
       .subinfo {
-        font-size: 1.8em;
+        font-size: 1.5em;
         font-weight: 500;
       }
 
       .info {
-        font-size: 2.3em;
+        font-size: 2em;
         font-weight: 900;
         padding: 5px 10px;
         border: 2px solid white;
@@ -599,10 +842,10 @@
         justify-content: center;
 
         p {
-          width: 60%;
-          min-width: 500px;
+          width: 80%;
+          min-width: 200px;
           font-weight: 100;
-          font-size: 1.2em;
+          font-size: 1em;
         }
       }
     }
@@ -658,6 +901,7 @@
       p {
         font-size: 1.5em;
         font-weight: 200;
+        text-align: center;
       }
     }
 
@@ -669,26 +913,33 @@
       height: 60vh;
 
       .left {
-        margin-left: 50px;
+        margin-left: 0;
 
-        .title {
+        .title
+        {
+          display: flex;
+          justify-content: center;
           p {
             font-family: "Pinyon Script", cursive;
-            font-size: 4em;
+            font-size: 3em;
             font-weight: 100;
           }
         }
 
         .txt {
+          display: flex;
+          justify-content: center;
           p {
-            width: 60%;
+            width: 80%;
             font-weight: 100;
-            font-size: 1.1em;
+            font-size: 1em;
           }
         }
 
         .btn {
-          margin-top: 40px;
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
 
           a {
             padding: 10px 20px;
@@ -703,10 +954,11 @@
     }
 
     .artisan {
+      display: none;
       position: absolute;
       right: 0;
       bottom: 0;
-      width: 35%;
+      width: 0%;
       height: auto;
     }
 

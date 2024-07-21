@@ -1,7 +1,3 @@
-Vous pouvez essayer de créer un dossie# Stock Wizz
-Ce projet a été réalisé dans le cadre d'un projet scolaire informatique, visant à renforcer les connaissances avec les technologies React & Node JS ainsi que toutes les librairies compatibles.
-
-
 ## Prérequis
 
 - Lien d'installation [PHP](https://www.php.net/downloads.php)
