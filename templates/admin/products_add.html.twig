@@ -13,6 +13,7 @@
             {{ form_widget(form.history, {'label': false, "attr": {"placeholder": "Histoire de la pièce"}}) }}
             {{ form_widget(form.member_informations, {'label': false, "attr": {"placeholder": "Informations dédiée aux membres"}}) }}
             {{ form_widget(form.imageFile) }}
+            <p>Taille de l'image obligatoire (800x1020 pixels)</p>
             <button type="submit">Ajouter un produit</button>
             {% for message in app.flashes('error') %}
                 <div class="error-msg">{{ message }}</div>

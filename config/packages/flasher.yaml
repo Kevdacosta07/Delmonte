@@ -1,6 +1,6 @@
 flasher:
     # Default notification library (e.g., 'flasher', 'toastr', 'noty', etc.)
-    default: toastr
+    default: flasher
 
     # Path to the main JavaScript file of PHPFlasher
     main_script: '/vendor/flasher/flasher.min.js'
@@ -21,8 +21,3 @@ flasher:
         error: ['error', 'danger']
         warning: ['warning', 'alarm']
         info: ['info', 'notice', 'alert']
-
-    # Criteria to filter displayed notifications (limit, types)
-    filter_criteria:
-        # Limit number of displayed notifications
-        limit: 5

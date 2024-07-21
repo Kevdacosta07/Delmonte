@@ -388,7 +388,7 @@ class AdminController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $data = $form->getData();
 
-            // Crée l'e-mail
+            // Créée l'e-mail
             $email = (new Email())
                 ->from("contact@delmonte.ch")
                 ->to(...$emailAddresses)

@@ -9,7 +9,13 @@
     Symfony (vérifiez avec > symfony check:requirements)
     Git (vérifiez avec > git --version)
 
-### Extension PHP à installer (fichier php.ini qui se trouve dans votre dossier php)
+## Installer les extensions PHP
+Pour activer des extensions PHP, vous devez vous rendre dans votre fichier php.ini, dans ce même fichier vous trouverez un peu plus bas des extensions écrite sous cette forme :
+> ;extension:pdo_mysql
+
+Il vous suffit d'enlever le ";" au début du mot "extension" pour activer l'extension n'oubliez pas d'enregistrer le fichier avant de le fermer.
+
+Extensions à activer :
 >    fileinfo / openssl / pdo_mysql / curl
 
 ## Étapes d'installation
@@ -40,7 +46,16 @@ L'application devrait maintenant être accessible à l'adresse http://localhost:
     php bin/console d:m:m
 
 ### En cas d'erreur
-En cas de problème, supprimez tous les fichiers présent dans **migrations** puis réessayez, il est possible qu'une erreur s'affiche mais que les tables ont été créées avec succès donc vérifiez également la base de donnée, si toutes les tables ont été installées avec succès vous devriez avoir minimum 5 tables. 
+En cas de problème, supprimez tous les fichiers présent dans **migrations** puis réessayez, il est possible qu'une erreur s'affiche mais que les tables ont été créées avec succès donc vérifiez également la base de donnée, si toutes les tables ont été installées, vous devriez avoir minimum 6 tables.
+
+## Configuration de l'email
+Rendez-vous dans le **.env** vous pourrez configurer les champs suivants :
+
+> MESSENGER_TRANSPORT_DSN
+> 
+> MAILER_DSN
+
+Cependant je vous recommande de laisser le MESSENGER_TRANSPORT_DSN par défaut et de modifier uniquement le MAILER_DSN, l'application a été conçue uniquement en phase de test vous pouvez donc ajouter uniquement des e-mail provenant de [MAILTRAP](https://mailtrap.io/)
 
 ## Compte utilisateurs
 Pour générer les comptes utilisateurs veuillez-vous rendre à cette adresse une fois le site lancé
@@ -53,3 +68,7 @@ Pour générer les comptes utilisateurs veuillez-vous rendre à cette adresse un
 ### Compte non administrateur
     email: user@mail.ch
     mot de passe: password
+
+
+## Pannel Administrateur
+Le pannel administrateur est seulement disponible au format ordinateur.

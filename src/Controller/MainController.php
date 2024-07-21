@@ -188,7 +188,7 @@ class MainController extends AbstractController
     }
 
     #[Route('/membres/adhesion', name: 'app_membres_adhesion')]
-    public function membres_adhesion(FlasherInterface $flasher, Request $request, UserRepository $userRepository, MemberRequestRepository $memberRequestRepository, EntityManagerInterface $entityManager, NewsLetterRepository $letterRepository, Security $security): Response
+    public function membres_adhesion(MailerInterface $mailer, FlasherInterface $flasher, Request $request, UserRepository $userRepository, MemberRequestRepository $memberRequestRepository, EntityManagerInterface $entityManager, NewsLetterRepository $letterRepository, Security $security): Response
     {
 
         $utilisateur = $security->getUser();
@@ -222,6 +222,22 @@ class MainController extends AbstractController
             $email = $utilisateur->getEmail();
             $lastname = $utilisateur->getLastname();
             $firstname = $utilisateur->getFirstname();
+
+            // Créée l'e-mail
+            $mail = (new Email())
+                ->from($email)
+                ->to("admin@delmonte.ch")
+                ->subject("Demande d'adhesion membre")
+                ->text("Vous avez reçu une demande d'adhesion de la part de : $lastname $firstname");
+
+            try
+            {
+                // Envoie l'e-mail
+                $mailer->send($mail);
+            } catch (TransportExceptionInterface $e)
+            {
+                $flasher->error("Une erreur s'est produite lors de l'envoi de votre message", [], "Erreur");
+            }
 
             $memberRequest = new MemberRequest();
 
